@@ -1,0 +1,44 @@
+.Post-a {
+    text-decoration: none;
+}
+
+.Post {
+    padding: 20px;    
+    margin-bottom: 40px;
+    border: 1px solid #c3c3c3;
+    background-color: #fafafa;
+    color: #333;
+    border-radius: 25px;    
+    cursor: pointer;
+    transition: scale .3s;        
+}
+
+.Post:hover {
+    scale: .95;
+}
+
+.Post header h2 {
+    font-size: 100%;
+    margin-top: 0;
+    margin-bottom: 10px;    
+}
+
+.Post img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.Post footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Post footer small {
+    display: inline-block;
+    border: 1px solid #6d6d6d;
+    color: #6d6d6d;
+    font-weight: 400;
+    border-radius: 25px;
+    padding: 2px 10px;
+}
