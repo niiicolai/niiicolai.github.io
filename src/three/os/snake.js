@@ -8,7 +8,7 @@ import { createButton } from "./button";
 
 export async function createSnakeApp(os, camera) {
   const { windowMesh, toggleWindow } = await createWindow(
-    "/icons/trashIcon.png",
+    "/icons/snakegameIcon.png",
     new THREE.Vector3(0.34, 2.15, 0),
     os.__mesh,
     camera,
@@ -44,7 +44,7 @@ export async function createSnakeApp(os, camera) {
         textOffset,
         snake.__mesh,
         {
-          iconGeometry: new THREE.PlaneGeometry(0.1, 0.1),
+          iconGeometry: new THREE.PlaneGeometry(0.05, 0.05),
           iconRotation: new THREE.Vector3(0, 0, 0),
           textColor: new THREE.Color().setHex(0xFFFFFF),
           fontSize: 0.02,
@@ -91,7 +91,7 @@ export async function createSnakeApp(os, camera) {
 
   const startBtn = await snake.__createButton(
     "Start Game",
-    "/icons/trashIcon.png",
+    "/icons/circle-play-solid-fontawesome.png",
     new THREE.Vector3(-0.07, -0.10, 0.008),
     new THREE.Vector2(-0.045, -0.014),
     () => {
