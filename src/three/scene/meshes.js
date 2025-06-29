@@ -110,7 +110,7 @@ export async function setupMeshes(scene) {
     ], scene)
 
     const screenMaterial = new THREE.MeshPhysicalMaterial({ color: 0x2D41D4, emissive: 0x2D41D4, emissiveIntensity: 1 })
-    const screenStarBarMaterial = new THREE.MeshPhysicalMaterial({ color: 0xCCCDDD, emissive: 0xCCCDDD, emissiveIntensity: 1 })
+    const screenStarBarMaterial = new THREE.MeshPhysicalMaterial({ color: 0x333333, emissive: 0x333333, emissiveIntensity: 1 })
     const screenBtnMaterial = new THREE.MeshPhysicalMaterial({ color: 0xAAAAAA, emissive: 0xAAAAAA, emissiveIntensity: 1 })
     const screenIconMaterial = new THREE.MeshPhysicalMaterial({ color: 0x000B97, emissive: 0x000B97, emissiveIntensity: 1 })
     const screenTextMaterial = new THREE.MeshPhysicalMaterial({ color: 0x000000, emissive: 0x000000, emissiveIntensity: 1 })

@@ -61,7 +61,7 @@ export async function createStartScreen(os, camera) {
   descText.material = textMaterial;
   descText.sync();
 
-  const cameraTarget = new THREE.Vector3(0, 1.1, 0.4);
+  const cameraTarget = new THREE.Vector3(0, 1.12, 0.4);
   let fadeInDuration = 1000; // ms
   let visibleDuration = 2000; // ms
   let fadeOutDuration = 1000; // ms
@@ -100,6 +100,10 @@ export async function createStartScreen(os, camera) {
         setTextOpacity(t);
         // Interpolate camera position
         camera.position.lerpVectors(initialCameraPosition, cameraTarget, t);
+        // Interpolate camera rotation to 0, 0, 0
+        camera.rotation.x += (0 - camera.rotation.x) * t;
+        camera.rotation.y += (0 - camera.rotation.y) * t;
+        camera.rotation.z += (0 - camera.rotation.z) * t;
       }
       // Hold text visible
       else if (elapsed < fadeInDuration + visibleDuration) {

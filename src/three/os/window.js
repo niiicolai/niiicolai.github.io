@@ -69,10 +69,9 @@ export async function createWindow(
     }
   );
 
-
   const lineMesh = new THREE.Mesh(
     new THREE.PlaneGeometry(options.windowGeometry.parameters.width, 0.06),
-    new THREE.MeshBasicMaterial({ color: new THREE.Color(0).setHex(0xaaaaaa) })
+    new THREE.MeshPhysicalMaterial({ color: 0x333333, emissive: 0x333333 })
   );
   mesh.add(lineMesh);
   lineMesh.position.set(0, 0.27, 0);

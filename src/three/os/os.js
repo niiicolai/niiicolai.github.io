@@ -9,7 +9,7 @@ import { createPaintApp } from "./paint";
 import { createSnakeApp } from "./snake";
 import { createStartScreen } from "./startScreen";
 
-export async function createOS(osMesh, camera, lightOptions) {
+export async function createOS(osMesh, camera, lightOptions, controlsOptions) {
   const os = {
     __mesh: osMesh,
     __camera: camera,
@@ -18,7 +18,10 @@ export async function createOS(osMesh, camera, lightOptions) {
   os.eventDispatcher = new THREE.EventDispatcher();
   os.isActive = false;
 
+  controlsOptions.controls.target.set(-0.0, 1.12, -0.5)
+
   os.turnOn = () => {
+    controlsOptions.setUseControls(false);
     os.startScreen.toggle();
     os.startScreen.load();
     osMesh.visible = true;
@@ -27,6 +30,7 @@ export async function createOS(osMesh, camera, lightOptions) {
   };
 
   os.turnOff = () => {
+    controlsOptions.setUseControls(true);
     osMesh.visible = false;
     camera.position.set(0, 1, 2);
     os.isActive = false;

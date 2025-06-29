@@ -39,14 +39,21 @@ export function useScene() {
             options.camera.near,
             options.camera.far,
         );
+
+        let useControls = true;
+        const controls = new OrbitControls(camera, renderer.domElement);
+        const setUseControls = (state) => {
+            useControls = state;
+            controls.enabled = state;
+        };
+        const controlsOptions = { controls, setUseControls };
+        controls.enableDamping = true
+        controls.autoRotate = true
+
         const lightOptions = setupLight(scene);
         const osMesh = await setupMeshes(scene);
-        const os = await createOS(osMesh, camera, lightOptions);
+        const os = await createOS(osMesh, camera, lightOptions, controlsOptions);
 
-        //const controls = new OrbitControls(camera, renderer.domElement)
-        //controls.enableDamping = true
-        //controls.autoRotate = true
-        
         camera.position.x = 0;
         camera.position.z = 2;
         camera.position.y = 1;
@@ -66,6 +73,7 @@ export function useScene() {
                 camera.updateProjectionMatrix();
             }            
 
+            if (useControls) controls.update();
             renderer.render(scene, camera)
         }
 

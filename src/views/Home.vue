@@ -37,9 +37,10 @@ onMounted(() => {
   <div class="overlay" v-if="!showScene">
     <div>
       <div class="overlay__content">
-        <button @click="turnOnPC">Turn On</button>
+        <button @click="turnOnPC" class="a">Turn On</button>
         <small>
-          Click the button above to turn the computer on.
+            Hey there! 👋 I'm Nicolai, and this is my interactive portfolio. Power up the PC to explore what I've been working on!<br />
+            On your phone? For a smoother experience, visit my <a class="link" href="https://github.com/niiicolai" target="_blank">GitHub</a> to see all my projects.
         </small>
       </div>
 
@@ -68,7 +69,7 @@ onMounted(() => {
   text-align: center;
 }
 
-.overlay__content button, .overlay__content a {
+.overlay__content button, .overlay__content .a {
   margin-top: 2rem;
   padding: 1rem 2rem;
   font-size: 2rem;
@@ -83,9 +84,15 @@ onMounted(() => {
   text-align: center;
 }
 
-.overlay__content button:hover, .overlay__content a:hover {
+.overlay__content button:hover, .overlay__content .a:hover {
   background-color: #f2f2f2;
 }
+
+.overlay__content button, .overlay__content .link {
+  color: rgb(61, 139, 255);
+}
+
+
 
 .overlay__content {
   display: flex;
