@@ -95,10 +95,11 @@ export async function setupMeshes(scene) {
         { name: 'Pen', material: mattBlack },
         { name: 'Pen_Handle', material: smoothBlack },
     ], scene)
-    loadModel('/coffee.glb', true, true, [
+    const coffee = await loadModel('/coffee.glb', true, true, [
         { name: 'Cup', material: mattWhite },
         { name: 'Coffee', material: smoothBlack },
     ], scene)
+    coffee.position.set(-.8, -1, -.3)
     loadModel('/sky.glb', false, true, [
         { name: 'Sky', material: lightWhite },
         { name: 'Sky_Floor', material: mattWhite },
@@ -108,6 +109,30 @@ export async function setupMeshes(scene) {
         { name: 'Monitor_Frame', material: metallicGray },
         { name: 'Monitor_Glass', material: smoothBlack },
     ], scene)
+
+    const signLightMaterial = new THREE.MeshPhysicalMaterial({ color: 0xFF0000, emissive: 0xFF0000, emissiveIntensity: 1 })
+    const signBggMaterial = new THREE.MeshPhysicalMaterial({ color: 0x333333, emissive: 0x333333, emissiveIntensity: 1 })
+    const sign = await loadModel('/openToOpportunities.glb', true, true, [
+        { name: 'Text', material: signLightMaterial },
+        { name: 'Cube', material: signBggMaterial },
+    ], scene);
+    sign.position.set(1.65, 0.37, -.37);
+    sign.scale.set(.1, .1, .1);
+    sign.rotation.y -= Math.PI / 2 + .3;
+
+    const lemonadeGuySkinMat = new THREE.MeshPhysicalMaterial({ color: 0xFFBB4D })
+    const lemonadeGuyShirtMat = new THREE.MeshPhysicalMaterial({ color: 0xFF1414 })
+    const lemonadeGuyPantsMat = new THREE.MeshPhysicalMaterial({ color: 0x3939B4 })
+    const lemonadeGuyShoesMat = new THREE.MeshPhysicalMaterial({ color: 0x474747 })
+    const lemonadeGuy = await loadModel('/lemonadeGuy.glb', true, true, [
+        { name: 'Skin', material: lemonadeGuySkinMat },
+        { name: 'Shirt', material: lemonadeGuyShirtMat },
+        { name: 'Pants', material: lemonadeGuyPantsMat },
+        { name: 'Shoes', material: lemonadeGuyShoesMat },
+    ], scene);
+    lemonadeGuy.position.set(-1.65, 0.49, -.37);
+    lemonadeGuy.scale.set(.05, .05, .05);
+    lemonadeGuy.rotation.y -= Math.PI / 2 - .5;
 
     const screenMaterial = new THREE.MeshPhysicalMaterial({ color: 0x2D41D4, emissive: 0x2D41D4, emissiveIntensity: 1 })
     const screenStarBarMaterial = new THREE.MeshPhysicalMaterial({ color: 0x333333, emissive: 0x333333, emissiveIntensity: 1 })
