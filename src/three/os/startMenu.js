@@ -45,7 +45,7 @@ export function createStartMenu(os, camera) {
 
   startMenu.__createButton(
     "Light App",
-    "/icons/trashIcon.png",
+    "/icons/lightbulbIcon.png",
     new THREE.Vector3(1.2, 0.02, 0.0),
     new THREE.Vector2(0.18, 0.137),
     () => {
@@ -56,7 +56,7 @@ export function createStartMenu(os, camera) {
 
   startMenu.__createButton(
     "Paint App",
-    "/icons/trashIcon.png",
+    "/icons/paintingIcon.png",
     new THREE.Vector3(1.2, 0.02, 0.6),
     new THREE.Vector2(0.18, 0.137),
     () => {
@@ -67,7 +67,7 @@ export function createStartMenu(os, camera) {
 
   startMenu.__createButton(
     "Snake Game",
-    "/icons/trashIcon.png",
+    "/icons/snakegameIcon.png",
     new THREE.Vector3(0.6, 0.02, -0.6),
     new THREE.Vector2(0.22, 0.137),
     () => {
@@ -78,9 +78,9 @@ export function createStartMenu(os, camera) {
 
   startMenu.__createButton(
     "Shutdown",
-    "/icons/globeIcon.png",
+    "/icons/turnoffIcon.png",
     new THREE.Vector3(-0.56, 0.02, -0.62),
-    new THREE.Vector2(0.175, 0.137),
+    new THREE.Vector2(0.185, 0.137),
     () => {
       os.turnOff();
       os.startMenu.toggle();

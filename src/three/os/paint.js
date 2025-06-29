@@ -8,7 +8,7 @@ import { loadTexture } from "../scene/texture";
 
 export async function createPaintApp(os, camera) {
   const { windowMesh, toggleWindow } = await createWindow(
-    "/icons/trashIcon.png",
+    "/icons/paintingIcon.png",
     new THREE.Vector3(0.345, 2.15, 0),
     os.__mesh,
     camera,

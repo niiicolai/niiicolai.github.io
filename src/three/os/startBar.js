@@ -48,7 +48,7 @@ export function createStartBar(os, camera) {
   const timeText = new Text();
   timeText.fontSize = .018;
   startBar.__mesh.add(timeText);
-  timeText.color = new THREE.Color().setHex(0x000000);
+  timeText.color = new THREE.Color().setHex(0xFFFFFF);
   timeText.rotation.y = -Math.PI / 2;
   timeText.position.x = -0.005;
   timeText.position.y = 0.025;
@@ -57,7 +57,7 @@ export function createStartBar(os, camera) {
   const dateText = new Text();
   dateText.fontSize = .018;
   startBar.__mesh.add(dateText);
-  dateText.color = new THREE.Color().setHex(0x000000);
+  dateText.color = new THREE.Color().setHex(0xFFFFFF);
   dateText.rotation.y = -Math.PI / 2;
   dateText.position.x = -0.005;
   dateText.position.y = 0.005;

@@ -6,7 +6,7 @@ import { createButton } from "./button";
 
 export async function createLightApp(os, camera, lightOptions) {
   const { windowMesh, toggleWindow } = await createWindow(
-    "/icons/trashIcon.png",
+    "/icons/lightbulbIcon.png",
     new THREE.Vector3(0.350, 2.15, 0),
     os.__mesh,
     camera,

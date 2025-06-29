@@ -150,13 +150,13 @@ export async function createBrowser(os, camera) {
 
     await browser.__createButton(
       "projects",
-      "/icons/barsIcon.png",
+      "/icons/box-archive-solid-fontawesome.png",
       new THREE.Vector3(0.355, 0.217, 0.01),
       new THREE.Vector2(0.029, 0.014),
       () => browser.setWebsite("http://localhost:5173/projects"),
       wrapper,
       {
-        iconGeometry: new THREE.PlaneGeometry(0.05, 0.05),
+        iconGeometry: new THREE.PlaneGeometry(0.03, 0.03),
         iconRotation: new THREE.Vector3(0, 0, 0),
         textColor: new THREE.Color().setHex(0x000000),
         fontSize: 0.015,
@@ -197,8 +197,8 @@ export async function createBrowser(os, camera) {
       "sometimes practical, sometimes experimental, always driven by curiosity.\n\n" +
       "I have a background in computer science and years of hands-on experience building everything from\n" +
       "web platforms to multiplayer game systems. My stack includes tools like JavaScript/TypeScript,\n" +
-      "Node.js, React, MongoDB, and WebSocket, and I often work with technologies like Docker,\n" +
-      "Unity, and MessagePack for high-performance systems.\n\n" +
+      "Node.js, React, MySQL, MongoDB, and WebSocket, and I often work with technologies like Docker,\n" +
+      "Unity, and Blender.\n\n" +
       "Whether it's crafting backend systems, designing frontend interfaces, or exploring new tech,\n" +
       "I'm always up for a challenge. Take a look around!";
     websiteMainDescText.fontSize = 0.015;
@@ -218,13 +218,13 @@ export async function createBrowser(os, camera) {
 
     await browser.__createButton(
       "GitHub",
-      "/icons/globeIcon.png",
+      "/icons/github-brands-fontawesome.png",
       new THREE.Vector3(0.35, -0.163, 0.008),
-      new THREE.Vector2(0.027, 0.014),
+      new THREE.Vector2(0.025, 0.014),
       () => window.open("https://github.com/niiicolai", "_blank"),
       wrapper,
       {
-        iconGeometry: new THREE.PlaneGeometry(0.05, 0.05),
+        iconGeometry: new THREE.PlaneGeometry(0.03, 0.03),
         iconRotation: new THREE.Vector3(0, 0, 0),
         textColor: new THREE.Color().setHex(0x000000),
         fontSize: 0.015,
@@ -233,9 +233,9 @@ export async function createBrowser(os, camera) {
 
     await browser.__createButton(
       "LinkedIn",
-      "/icons/globeIcon.png",
+      "/icons/linkedin-brands-fontawesome.png",
       new THREE.Vector3(0.275, -0.163, 0.008),
-      new THREE.Vector2(0.027, 0.014),
+      new THREE.Vector2(0.028, 0.014),
       () =>
         window.open(
           "https://www.linkedin.com/in/nicolai-berg-andersen-ab1279b3/",
@@ -243,23 +243,7 @@ export async function createBrowser(os, camera) {
         ),
       wrapper,
       {
-        iconGeometry: new THREE.PlaneGeometry(0.05, 0.05),
-        iconRotation: new THREE.Vector3(0, 0, 0),
-        textColor: new THREE.Color().setHex(0x000000),
-        fontSize: 0.015,
-      }
-    );
-
-    await browser.__createButton(
-      "BuiltIn",
-      "/icons/globeIcon.png",
-      new THREE.Vector3(0.21, -0.163, 0.008),
-      new THREE.Vector2(0.027, 0.014),
-      () =>
-        window.open("https://builtin.com/authors/nicolai-andersen", "_blank"),
-      wrapper,
-      {
-        iconGeometry: new THREE.PlaneGeometry(0.05, 0.05),
+        iconGeometry: new THREE.PlaneGeometry(0.03, 0.03),
         iconRotation: new THREE.Vector3(0, 0, 0),
         textColor: new THREE.Color().setHex(0x000000),
         fontSize: 0.015,
@@ -270,13 +254,13 @@ export async function createBrowser(os, camera) {
   browser.createWebsite("http://localhost:5173/projects", async (wrapper) => {
     await browser.__createButton(
       "back",
-      "/icons/timesIcon.png",
+      "/icons/left-long-solid-fontawesome.png",
       new THREE.Vector3(-0.365, 0.217, 0.008),
       new THREE.Vector2(0.017, 0.014),
       () => browser.setWebsite("http://localhost:5173/about"),
       wrapper,
       {
-        iconGeometry: new THREE.PlaneGeometry(0.05, 0.05),
+        iconGeometry: new THREE.PlaneGeometry(0.03, 0.03),
         iconRotation: new THREE.Vector3(0, 0, 0),
         textColor: new THREE.Color().setHex(0x000000),
         fontSize: 0.015,
@@ -328,7 +312,7 @@ export async function createBrowser(os, camera) {
 
     await browser.__createButton(
       "GitHub",
-      "/icons/globeIcon.png",
+      "/icons/github-brands-fontawesome.png",
       new THREE.Vector3(0.355, 0.143, 0.008),
       new THREE.Vector2(0.025, 0.014),
       () =>
@@ -338,7 +322,7 @@ export async function createBrowser(os, camera) {
         ),
       wrapper,
       {
-        iconGeometry: new THREE.PlaneGeometry(0.05, 0.05),
+        iconGeometry: new THREE.PlaneGeometry(0.03, 0.03),
         iconRotation: new THREE.Vector3(0, 0, 0),
         textColor: new THREE.Color().setHex(0x000000),
         fontSize: 0.015,
@@ -366,14 +350,14 @@ export async function createBrowser(os, camera) {
 
     await browser.__createButton(
       "Video",
-      "/icons/globeIcon.png",
+      "/icons/youtube-brands-fontawesome.png",
       new THREE.Vector3(0.295, 0.083, 0.008),
       new THREE.Vector2(0.02, 0.014),
       () =>
         window.open("https://www.youtube.com/watch?v=gc0yM8eqkV0", "_blank"),
       wrapper,
       {
-        iconGeometry: new THREE.PlaneGeometry(0.05, 0.05),
+        iconGeometry: new THREE.PlaneGeometry(0.03, 0.03),
         iconRotation: new THREE.Vector3(0, 0, 0),
         textColor: new THREE.Color().setHex(0x000000),
         fontSize: 0.015,
@@ -382,7 +366,7 @@ export async function createBrowser(os, camera) {
 
     await browser.__createButton(
       "GitHub",
-      "/icons/globeIcon.png",
+      "/icons/github-brands-fontawesome.png",
       new THREE.Vector3(0.355, 0.083, 0.008),
       new THREE.Vector2(0.025, 0.014),
       () =>
@@ -392,7 +376,7 @@ export async function createBrowser(os, camera) {
         ),
       wrapper,
       {
-        iconGeometry: new THREE.PlaneGeometry(0.05, 0.05),
+        iconGeometry: new THREE.PlaneGeometry(0.03, 0.03),
         iconRotation: new THREE.Vector3(0, 0, 0),
         textColor: new THREE.Color().setHex(0x000000),
         fontSize: 0.015,
@@ -420,14 +404,14 @@ export async function createBrowser(os, camera) {
 
     await browser.__createButton(
       "Video",
-      "/icons/globeIcon.png",
+      "/icons/youtube-brands-fontawesome.png",
       new THREE.Vector3(0.295, 0.023, 0.008),
       new THREE.Vector2(0.02, 0.014),
       () =>
         window.open("https://www.youtube.com/watch?v=gZ16FViAOOE", "_blank"),
       wrapper,
       {
-        iconGeometry: new THREE.PlaneGeometry(0.05, 0.05),
+        iconGeometry: new THREE.PlaneGeometry(0.03, 0.03),
         iconRotation: new THREE.Vector3(0, 0, 0),
         textColor: new THREE.Color().setHex(0x000000),
         fontSize: 0.015,
@@ -436,13 +420,13 @@ export async function createBrowser(os, camera) {
 
     await browser.__createButton(
       "GitHub",
-      "/icons/globeIcon.png",
+      "/icons/github-brands-fontawesome.png",
       new THREE.Vector3(0.355, 0.023, 0.008),
       new THREE.Vector2(0.025, 0.014),
       () => window.open("https://github.com/VR-web-shop", "_blank"),
       wrapper,
       {
-        iconGeometry: new THREE.PlaneGeometry(0.05, 0.05),
+        iconGeometry: new THREE.PlaneGeometry(0.03, 0.03),
         iconRotation: new THREE.Vector3(0, 0, 0),
         textColor: new THREE.Color().setHex(0x000000),
         fontSize: 0.015,
@@ -470,13 +454,13 @@ export async function createBrowser(os, camera) {
 
     await browser.__createButton(
       "GitHub",
-      "/icons/globeIcon.png",
+      "/icons/github-brands-fontawesome.png",
       new THREE.Vector3(0.355, -0.04, 0.008),
       new THREE.Vector2(0.025, 0.014),
       () => window.open("https://github.com/niiicolai/ai-editor", "_blank"),
       wrapper,
       {
-        iconGeometry: new THREE.PlaneGeometry(0.05, 0.05),
+        iconGeometry: new THREE.PlaneGeometry(0.03, 0.03),
         iconRotation: new THREE.Vector3(0, 0, 0),
         textColor: new THREE.Color().setHex(0x000000),
         fontSize: 0.015,
@@ -504,13 +488,13 @@ export async function createBrowser(os, camera) {
 
     await browser.__createButton(
       "GitHub",
-      "/icons/globeIcon.png",
+      "/icons/github-brands-fontawesome.png",
       new THREE.Vector3(0.355, -0.1, 0.008),
       new THREE.Vector2(0.025, 0.014),
       () => window.open("https://github.com/niiicolai/chat-app", "_blank"),
       wrapper,
       {
-        iconGeometry: new THREE.PlaneGeometry(0.05, 0.05),
+        iconGeometry: new THREE.PlaneGeometry(0.03, 0.03),
         iconRotation: new THREE.Vector3(0, 0, 0),
         textColor: new THREE.Color().setHex(0x000000),
         fontSize: 0.015,
@@ -538,7 +522,7 @@ export async function createBrowser(os, camera) {
 
     await browser.__createButton(
       "Tutorial",
-      "/icons/globeIcon.png",
+      "/icons/medium-brands-fontawesome.png",
       new THREE.Vector3(0.295, -0.16, 0.008),
       new THREE.Vector2(0.025, 0.014),
       () =>
@@ -548,7 +532,7 @@ export async function createBrowser(os, camera) {
         ),
       wrapper,
       {
-        iconGeometry: new THREE.PlaneGeometry(0.05, 0.05),
+        iconGeometry: new THREE.PlaneGeometry(0.03, 0.03),
         iconRotation: new THREE.Vector3(0, 0, 0),
         textColor: new THREE.Color().setHex(0x000000),
         fontSize: 0.015,
@@ -557,13 +541,13 @@ export async function createBrowser(os, camera) {
 
     await browser.__createButton(
       "GitHub",
-      "/icons/globeIcon.png",
+      "/icons/github-brands-fontawesome.png",
       new THREE.Vector3(0.355, -0.16, 0.008),
       new THREE.Vector2(0.025, 0.014),
       () => window.open("https://github.com/niiicolai/video-player", "_blank"),
       wrapper,
       {
-        iconGeometry: new THREE.PlaneGeometry(0.05, 0.05),
+        iconGeometry: new THREE.PlaneGeometry(0.03, 0.03),
         iconRotation: new THREE.Vector3(0, 0, 0),
         textColor: new THREE.Color().setHex(0x000000),
         fontSize: 0.015,
