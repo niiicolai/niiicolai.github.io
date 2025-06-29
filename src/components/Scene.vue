@@ -11,6 +11,10 @@ const scene = useScene()
 
 onMounted(async () => await scene.onMounted(canvasRef.value))
 onUnmounted(() => scene.onUnmounted())
+
+defineExpose({
+    adapter: scene.adapter
+})
 </script>
 
 <style scoped>
