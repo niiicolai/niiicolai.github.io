@@ -1,4 +1,4 @@
-import * as THREE from 'three'
+import * as THREE from "three";
 
 export function resizeRendererToDisplaySize(renderer) {
   const canvas = renderer.domElement;
@@ -11,3 +11,9 @@ export function resizeRendererToDisplaySize(renderer) {
   return needResize;
 }
 
+export function resizeFovToDisplaySize(camera) {
+  return () => {
+    camera.fov = Math.max(80, Math.min(130, 75 * (1200 / window.innerWidth)));
+    camera.updateProjectionMatrix();
+  };
+}

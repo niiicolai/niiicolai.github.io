@@ -2,7 +2,7 @@ import * as THREE from "three";
 import { Text } from "troika-three-text";
 import { addClickEvent } from "../scene/clickEvent";
 import { loopDispatcher } from "../scene/loopEvent";
-import { createButton } from "./button";
+import { createButton } from "../button";
 
 export function createStartBar(os, camera) {
   const startBarMesh = os.__mesh.children[0].children.find(
@@ -61,7 +61,7 @@ export function createStartBar(os, camera) {
   dateText.rotation.y = -Math.PI / 2;
   dateText.position.x = -0.005;
   dateText.position.y = 0.005;
-  dateText.position.z = 0.658;
+  dateText.position.z = 0.668;
 
   const updateTimeText = () => {
     const now = new Date();

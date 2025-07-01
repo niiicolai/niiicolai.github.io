@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import { Text } from "troika-three-text";
-import { loadTexture } from "../scene/texture";
+import { loadTexture } from "./scene/texture";
 
 export async function createButton(text, iconSrc, pos, textOffset, parent, options={
     iconGeometry: new THREE.PlaneGeometry(0.1, 0.1), 

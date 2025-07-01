@@ -4,7 +4,7 @@ import { addClickEvent } from "../scene/clickEvent";
 import { loopDispatcher } from "../scene/loopEvent";
 import { addKeyEvent } from "../scene/keyEvent";
 import { createWindow } from "./window";
-import { createButton } from "./button";
+import { createButton } from "../button";
 
 export async function createSnakeApp(os, camera) {
   const { windowMesh, toggleWindow } = await createWindow(

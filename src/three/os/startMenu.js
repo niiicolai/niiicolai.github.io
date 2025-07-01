@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import { addClickEvent } from "../scene/clickEvent";
-import { createButton } from "./button";
+import { createButton } from "../button";
 
 export function createStartMenu(os, camera) {
   const startMenuWindow = os.__mesh.children[0].children.find(

@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { createButton } from "./button";
+import { createButton } from "../button";
 import { addClickEvent } from "../scene/clickEvent";
 import { loopDispatcher } from "../scene/loopEvent";
 

@@ -3,7 +3,7 @@ import { Text } from "troika-three-text";
 import { addClickEvent } from "../scene/clickEvent";
 import { addDragEvent } from "../scene/dragEvent";
 import { createWindow } from "./window";
-import { createButton } from "./button";
+import { createButton } from "../button";
 import { loadTexture } from "../scene/texture";
 
 export async function createPaintApp(os, camera) {

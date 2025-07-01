@@ -2,7 +2,7 @@ import * as THREE from "three";
 import { loadTexture } from "../scene/texture";
 import { addClickEvent } from "../scene/clickEvent";
 import { addDragEvent } from "../scene/dragEvent";
-import { createButton } from "./button";
+import { createButton } from "../button";
 
 let noWindow = 0;
 let windows = [];

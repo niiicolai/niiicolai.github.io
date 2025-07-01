@@ -37,10 +37,9 @@ onMounted(() => {
   <div class="overlay" v-if="!showScene">
     <div>
       <div class="overlay__content">
-        <button @click="turnOnPC" class="a">Turn On</button>
+        <button @click="turnOnPC" class="a">Power up</button>
         <small>
-            Hey there! 👋 I'm Nicolai, and this is my interactive portfolio. Power up the PC to explore what I've been working on!<br />
-            On your phone? For a smoother experience, visit my <a class="link" href="https://github.com/niiicolai" target="_blank">GitHub</a> to see all my projects.
+            Hey there! 👋 I'm Nicolai, and this is my interactive portfolio. Power up the system to explore what I've been working on!
         </small>
       </div>
 
@@ -98,6 +97,7 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding: 2em;
 }
 
 .overlay__content small {

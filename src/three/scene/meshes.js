@@ -134,6 +134,31 @@ export async function setupMeshes(scene) {
     lemonadeGuy.scale.set(.05, .05, .05);
     lemonadeGuy.rotation.y -= Math.PI / 2 - .5;
 
+    const phoneGlassMaterial = new THREE.MeshPhysicalMaterial({ 
+        color: 0x000000, 
+        metalness: 1, 
+        roughness: 0.05, 
+        transmission: 0.7, 
+    });
+    const phoneMetalMaterial = new THREE.MeshPhysicalMaterial({ 
+        color: 0xDDDDDD, 
+        metalness: 1, 
+        roughness: 0.2 
+    });
+    const phoneStandMaterial = new THREE.MeshPhysicalMaterial({ 
+        color: 0x333333, 
+        metalness: 0.2, 
+        roughness: 0.7 
+    });
+    const phoneWithStand = await loadModel('/phone-with-stand.glb', true, true, [
+        { name: 'Phone', material: phoneGlassMaterial },
+        { name: 'PhoneMetal', material: phoneMetalMaterial },
+        { name: 'PhoneStand', material: phoneStandMaterial },
+    ], scene);
+    phoneWithStand.position.set(-0.65, 0.28, -.27);
+    phoneWithStand.scale.set(.05, .05, .05);
+    phoneWithStand.rotation.y -= Math.PI / 2 - .2;
+
     const screenMaterial = new THREE.MeshPhysicalMaterial({ color: 0x2D41D4, emissive: 0x2D41D4, emissiveIntensity: 1 })
     const screenStarBarMaterial = new THREE.MeshPhysicalMaterial({ color: 0x333333, emissive: 0x333333, emissiveIntensity: 1 })
     const screenBtnMaterial = new THREE.MeshPhysicalMaterial({ color: 0xAAAAAA, emissive: 0xAAAAAA, emissiveIntensity: 1 })

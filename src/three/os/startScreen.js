@@ -123,6 +123,7 @@ export async function createStartScreen(os, camera) {
         mesh.position.set(99, 0, 0);
         os.browser.toggle();
         clearInterval(intervalId);
+        os.resizeToDisplay();
       }
     }, 1000 / 60);
   };

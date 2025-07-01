@@ -2,7 +2,7 @@ import * as THREE from "three";
 import { Text } from "troika-three-text";
 import { addClickEvent } from "../scene/clickEvent";
 import { createWindow } from "./window";
-import { createButton } from "./button";
+import { createButton } from "../button";
 
 export async function createLightApp(os, camera, lightOptions) {
   const { windowMesh, toggleWindow } = await createWindow(
