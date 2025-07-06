@@ -20,5 +20,6 @@ export const addClickEvent = (obj, camera, callback) => {
 
 export const addClickEventListener = () =>
   window.addEventListener("pointerdown", onClick);
-export const removeClickEventListener = () =>
+export const removeClickEventListener = () =>{
   window.removeEventListener("pointerdown", onClick);
+}

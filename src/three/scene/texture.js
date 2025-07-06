@@ -2,6 +2,7 @@ import * as THREE from 'three';
 
 const textureLoader = new THREE.TextureLoader();
 const texture = {};
+const gradientTextureCache = {};
 
 export const loadTexture = async (src) => {
     if (texture[src]) return texture[src];
@@ -12,6 +13,9 @@ export const loadTexture = async (src) => {
 }
 
 export function createGradientTexture(colorStops) {
+    const key = colorStops.map(([stop, color]) => `${stop}-${color}`).join('|');
+    if (gradientTextureCache[key]) return gradientTextureCache[key];
+
     const size = 256;
     const canvas = document.createElement("canvas");
     canvas.width = size;
@@ -28,5 +32,8 @@ export function createGradientTexture(colorStops) {
 
     const texture = new THREE.Texture(canvas);
     texture.needsUpdate = true;
+    
+    gradientTextureCache[key] = texture;
+
     return texture;
   }

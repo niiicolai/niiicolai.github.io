@@ -165,6 +165,8 @@ export async function createSnakeApp(os, camera) {
 
   // Update tail positions each frame
   loopDispatcher.addEventListener("loopEvent", () => {
+    if (!snake.__isGameActive || !snake.__mesh.visible) return;
+
     // Insert new head position at the front
     snakePositions.unshift(character.position.clone());
     // Remove last position to keep length
@@ -199,6 +201,8 @@ export async function createSnakeApp(os, camera) {
   const velocity = new THREE.Vector2(0, speed);
 
   loopDispatcher.addEventListener("loopEvent", () => {
+    if (!snake.__isGameActive|| !snake.__mesh.visible) return;
+
     character.position.x += velocity.x;
     character.position.y += velocity.y;
 

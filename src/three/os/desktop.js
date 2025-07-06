@@ -109,6 +109,8 @@ export function createDesktop(os, camera) {
   }
 
   loopDispatcher.addEventListener("loopEvent", () => {
+    if (os.outOfFocus) return;
+    
     for (const p of particles) {
       p.mesh.position.add(p.velocity);
       // Simple bounds for the effect area

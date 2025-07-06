@@ -96,16 +96,36 @@ export function useScene() {
 
     animate();
 
-    adapter.value = { scene, camera, renderer, os, isReady: true, };
+    
+    const dispose = () => {
+      removeResizeEventListener();
+      removeKeyEventListener();
+      removeClickEventListener();
+      removeDragEventListener();
+      removeLoopListener();
+      controls.dispose();
+      renderer.dispose();
+      // dispose all geometries and materials in the scene
+      scene.traverse((object) => {
+        if (object.geometry) object.geometry.dispose();
+        if (object.material) {
+          if (Array.isArray(object.material)) {
+            object.material.forEach((material) => material.dispose());
+          } else {
+            object.material.dispose();
+          }
+        }
+      });
+      scene.clear();
+      adapter.value = {};
+    };
+
+    adapter.value = { scene, camera, renderer, os, dispose, isReady: true, };
   };
 
   const onUnmounted = () => {
-    removeResizeEventListener();
-    removeKeyEventListener();
-    removeClickEventListener();
-    removeDragEventListener();
-    removeLoopListener();
-    adapter.value = {};
+    if (!adapter.value || !adapter.value.isReady) return;
+    adapter.value.dispose();
   };
 
   return {
