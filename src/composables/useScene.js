@@ -27,7 +27,7 @@ import { setupLight } from "../three/scene/light";
 import { createOS } from "../three/os/os";
 import { createMobile } from "../three/mobile/mobile";
 
-const adapter = ref({});
+const adapter = ref({ isReady: false });
 
 export function useScene() {
   const onMounted = async (
@@ -96,7 +96,7 @@ export function useScene() {
 
     animate();
 
-    adapter.value = { scene, camera, renderer, os };
+    adapter.value = { scene, camera, renderer, os, isReady: true, };
   };
 
   const onUnmounted = () => {
