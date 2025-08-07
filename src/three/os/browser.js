@@ -231,7 +231,7 @@ export async function createBrowser(os, camera) {
       }
     );
 
-    await browser.__createButton(
+    /*await browser.__createButton(
       "LinkedIn",
       "/icons/linkedin-brands-fontawesome.png",
       new THREE.Vector3(0.275, -0.163, 0.008),
@@ -248,7 +248,7 @@ export async function createBrowser(os, camera) {
         textColor: new THREE.Color().setHex(0x000000),
         fontSize: 0.015,
       }
-    );
+    );*/
   });
 
   browser.createWebsite("http://localhost:5173/projects", async (wrapper) => {

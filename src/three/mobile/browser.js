@@ -208,7 +208,7 @@ export function createBrowser(mobile) {
     });
   });
 
-  createButton(
+  /*createButton(
     "LinkedIn",
     "/icons/linkedin-brands-fontawesome.png",
     new THREE.Vector3(-0.03, -0.077, 0.001),
@@ -228,7 +228,7 @@ export function createBrowser(mobile) {
           "_blank"
         );
     });
-  });
+  });*/
 
   createButton(
     "About",

@@ -42,9 +42,6 @@ onMounted(() => {
             Hey there! 👋 I'm Nicolai, and this is my interactive portfolio. Power up the system to explore what I've been working on!
         </small>
       </div>
-
-      <!--small info about author-->
-      <p class="author">by <a href="https://www.linkedin.com/in/nicolai-berg-andersen-ab1279b3/" target="_blank">nicolai</a></p>
     </div>
   </div>
   <div class="overlay flex flex-col justify-center align-center gap-1" v-if="!sceneRef?.adapter?.isReady">
