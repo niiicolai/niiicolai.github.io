@@ -58,7 +58,7 @@ export async function createWindow(
   if (options.closeBtnOffset) closeBtnPosition.add(options.closeBtnOffset);
   const closeBtn = await createButton(
     "",
-    "/icons/square-xmark-solid-fontawesome.png",
+    "/icons/times-icon.png",
     closeBtnPosition,
     new THREE.Vector3(),
     mesh,

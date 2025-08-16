@@ -52,19 +52,19 @@ export async function createStartScreen(os, camera) {
 
   const descText = new Text();
   startScreen.__mesh.add(descText);
-  descText.text = "Version 0.0.1.iceCream";
+  descText.text = "Version 0.0.2";
   descText.fontSize = 0.045;
   descText.rotation.y = -Math.PI / 2;
-  descText.position.z = -0.24;
+  descText.position.z = -0.14;
   descText.position.y = 2.1;
   descText.position.x = 0.35;
   descText.material = textMaterial;
   descText.sync();
 
   const cameraTarget = new THREE.Vector3(0, 1.12, 0.4);
-  let fadeInDuration = 1000; // ms
-  let visibleDuration = 2000; // ms
-  let fadeOutDuration = 1000; // ms
+  let fadeInDuration = 1000;
+  let visibleDuration = 2000;
+  let fadeOutDuration = 1000;
   let startTime = null;
   let intervalId = null;
 

@@ -150,7 +150,7 @@ export async function createBrowser(os, camera) {
 
     await browser.__createButton(
       "projects",
-      "/icons/box-archive-solid-fontawesome.png",
+      "/icons/projects-icon.png",
       new THREE.Vector3(0.355, 0.217, 0.01),
       new THREE.Vector2(0.029, 0.014),
       () => browser.setWebsite("http://localhost:5173/projects"),
@@ -231,7 +231,7 @@ export async function createBrowser(os, camera) {
       }
     );
 
-    /*await browser.__createButton(
+    await browser.__createButton(
       "LinkedIn",
       "/icons/linkedin-brands-fontawesome.png",
       new THREE.Vector3(0.275, -0.163, 0.008),
@@ -248,13 +248,13 @@ export async function createBrowser(os, camera) {
         textColor: new THREE.Color().setHex(0x000000),
         fontSize: 0.015,
       }
-    );*/
+    );
   });
 
   browser.createWebsite("http://localhost:5173/projects", async (wrapper) => {
     await browser.__createButton(
       "back",
-      "/icons/left-long-solid-fontawesome.png",
+      "/icons/arrow-left-icon.png",
       new THREE.Vector3(-0.365, 0.217, 0.008),
       new THREE.Vector2(0.017, 0.014),
       () => browser.setWebsite("http://localhost:5173/about"),

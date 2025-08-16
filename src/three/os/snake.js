@@ -91,7 +91,7 @@ export async function createSnakeApp(os, camera) {
 
   const startBtn = await snake.__createButton(
     "Start Game",
-    "/icons/circle-play-solid-fontawesome.png",
+    "/icons/play-icon.png",
     new THREE.Vector3(-0.07, -0.10, 0.008),
     new THREE.Vector2(-0.045, -0.014),
     () => {

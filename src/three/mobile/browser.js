@@ -120,7 +120,7 @@ export function createBrowser(mobile) {
 
   browser.__createButton(
     "",
-    "/icons/left-long-solid-fontawesome.png",
+    "/icons/arrow-left-icon.png",
     new THREE.Vector3(-0.058, 0.11, 0.001),
     new THREE.Vector2(0.007, 0.01),
     () => mobile.home.window.setVisible(true)
@@ -134,7 +134,7 @@ export function createBrowser(mobile) {
 
   createButton(
     "Projects",
-    "/icons/box-archive-solid-fontawesome.png",
+    "/icons/projects-icon.png",
     new THREE.Vector3(0.062, 0.11, 0.001),
     new THREE.Vector2(0.0125, 0.01),
     about.mesh,
@@ -208,7 +208,7 @@ export function createBrowser(mobile) {
     });
   });
 
-  /*createButton(
+  createButton(
     "LinkedIn",
     "/icons/linkedin-brands-fontawesome.png",
     new THREE.Vector3(-0.03, -0.077, 0.001),
@@ -228,11 +228,11 @@ export function createBrowser(mobile) {
           "_blank"
         );
     });
-  });*/
+  });
 
   createButton(
     "About",
-    "/icons/box-archive-solid-fontawesome.png",
+    "/icons/projects-icon.png",
     new THREE.Vector3(0.062, 0.11, 0.001),
     new THREE.Vector2(0.0105, 0.01),
     projects.mesh,

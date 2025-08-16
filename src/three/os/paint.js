@@ -245,7 +245,7 @@ export async function createPaintApp(os, camera) {
 
   paint.__createButton(
     "",
-    "/icons/trashIcon.png",
+    "/icons/trash-icon.png",
     new THREE.Vector3(0.065, 0.22, 0.008),
     new THREE.Vector2(-0.045, -0.014),
     () => {

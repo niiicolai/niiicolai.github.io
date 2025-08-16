@@ -59,7 +59,7 @@ export function createPaint(mobile) {
 
   paint.__createButton(
     "",
-    "/icons/left-long-solid-fontawesome.png",
+    "/icons/arrow-left-icon.png",
     new THREE.Vector3(-0.058, 0.11, 0.001),
     new THREE.Vector2(0.007, 0.01),
     () => mobile.home.window.setVisible(true)
@@ -247,7 +247,7 @@ export function createPaint(mobile) {
 
   paint.__createButton(
     "",
-    "/icons/trashIcon.png",
+    "/icons/trash-icon.png",
     new THREE.Vector3(0.072, -0.121, 0.001),
     new THREE.Vector2(0.007, 0.01),
     () => {

@@ -66,7 +66,7 @@ export function createDesktop(os, camera) {
 
   desktop.__createButton(
     "Trashbin",
-    "/icons/trashIcon.png",
+    "/icons/trash-icon.png",
     new THREE.Vector3(0.36, 1.93, 0.6),
     new THREE.Vector2(0.04, 0.033),
     () => os.trash.toggle()

@@ -54,7 +54,7 @@ export function createHome(mobile) {
   dateText.fontSize = 0.0068;
   home.window.mesh.add(dateText);
   dateText.color = new THREE.Color().setHex(0xffffff);
-  dateText.position.x = 0.048;
+  dateText.position.x = 0.042;
   dateText.position.y = 0.127;
   dateText.position.z = 0.001;
 

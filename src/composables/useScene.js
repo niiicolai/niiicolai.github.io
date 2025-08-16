@@ -36,7 +36,7 @@ export function useScene() {
       camera: {
         fov: 75,
         aspect: window.innerWidth / window.innerHeight,
-        near: 0.1,
+        near: 0.01,
         far: 1000,
       },
     }
@@ -50,6 +50,7 @@ export function useScene() {
       options.camera.near,
       options.camera.far
     );
+    renderer.render(scene, camera);
 
     let useControls = true;
     const controls = new OrbitControls(camera, renderer.domElement);

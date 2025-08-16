@@ -4,7 +4,7 @@ import { addClickEvent } from "../scene/clickEvent";
 import { createWindow } from "./window";
 
 export async function createTrashbin(os, camera) {
-  const { windowMesh, toggleWindow } = await createWindow("/icons/trashIcon.png", new THREE.Vector3(0.355, 2.15, 0), os.__mesh, camera, {
+  const { windowMesh, toggleWindow } = await createWindow("/icons/trash-icon.png", new THREE.Vector3(0.355, 2.15, 0), os.__mesh, camera, {
     windowGeometry: new THREE.PlaneGeometry(.5, 0.6),
     windowMaterial: new THREE.MeshBasicMaterial(),
     fontMaterial: new THREE.MeshBasicMaterial({ color: new THREE.Color(0).setHex( 0x112233 )}),

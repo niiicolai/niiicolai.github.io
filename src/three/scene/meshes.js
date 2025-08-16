@@ -4,7 +4,7 @@ import { loadTexture } from './texture';
 
 async function loadModel(src, castShadow, receiveShadow, submeshes = [], scene) {
   const loader = new GLTFLoader();
-  const model = await loader.loadAsync(src);
+  const model = await loader.loadAsync(`/meshes/${src}`);
   const mesh = model.scene;
   scene.add(mesh);
   mesh.position.y = -1;
@@ -49,6 +49,11 @@ export async function setupMeshes(scene) {
     const blackFabricTexture = await loadTexture('/textures/black_fabric_basecolor.png');
     const blackFabricMaterial = new THREE.MeshPhysicalMaterial({ map: blackFabricTexture })
 
+    const greyFabricTexture = await loadTexture('/textures/grey_fabric_basecolor.png');
+    greyFabricTexture.wrapS = THREE.RepeatWrapping;
+    greyFabricTexture.wrapT = THREE.RepeatWrapping;
+    const greyFabricMaterial = new THREE.MeshPhysicalMaterial({ map: greyFabricTexture })
+
     loadModel('/table.glb', true, true, [
         { name: 'Table_Legs', material: metallicGray },
         { name: 'Table_Top', material: smoothBlack }
@@ -81,7 +86,7 @@ export async function setupMeshes(scene) {
         { name: 'Lamp_Light_Top', material: lightWhite },
         { name: 'Lamp_Light_Bottom', material: metallicGray },
     ], scene)
-    loadModel('/lamp_emission.glb', false, false, [
+    loadModel('/lamp-emission.glb', false, false, [
         { name: 'Lamp_Light_Emission_1', material: lightFadeEmission },
     ], scene)
     loadModel('/notebook.glb', true, true, [
@@ -100,9 +105,8 @@ export async function setupMeshes(scene) {
         { name: 'Coffee', material: smoothBlack },
     ], scene)
     coffee.position.set(-.8, -1, -.3)
-    loadModel('/sky.glb', false, true, [
-        { name: 'Sky', material: lightWhite },
-        { name: 'Sky_Floor', material: mattWhite },
+    loadModel('/floor.glb', false, true, [
+        { name: 'Cylinder', material: greyFabricMaterial },
     ], scene)
     loadModel('/monitor.glb', true, true, [
         { name: 'Monitor_Stand', material: metallicGray },
@@ -110,21 +114,11 @@ export async function setupMeshes(scene) {
         { name: 'Monitor_Glass', material: smoothBlack },
     ], scene)
 
-    const signLightMaterial = new THREE.MeshPhysicalMaterial({ color: 0xFF0000, emissive: 0xFF0000, emissiveIntensity: 1 })
-    const signBggMaterial = new THREE.MeshPhysicalMaterial({ color: 0x333333, emissive: 0x333333, emissiveIntensity: 1 })
-    const sign = await loadModel('/openToOpportunities.glb', true, true, [
-        { name: 'Text', material: signLightMaterial },
-        { name: 'Cube', material: signBggMaterial },
-    ], scene);
-    sign.position.set(1.65, 0.37, -.37);
-    sign.scale.set(.1, .1, .1);
-    sign.rotation.y -= Math.PI / 2 + .3;
-
     const lemonadeGuySkinMat = new THREE.MeshPhysicalMaterial({ color: 0xFFBB4D })
     const lemonadeGuyShirtMat = new THREE.MeshPhysicalMaterial({ color: 0xFF1414 })
     const lemonadeGuyPantsMat = new THREE.MeshPhysicalMaterial({ color: 0x3939B4 })
     const lemonadeGuyShoesMat = new THREE.MeshPhysicalMaterial({ color: 0x474747 })
-    const lemonadeGuy = await loadModel('/lemonadeGuy.glb', true, true, [
+    const lemonadeGuy = await loadModel('/lemonade-shop-guy.glb', true, true, [
         { name: 'Skin', material: lemonadeGuySkinMat },
         { name: 'Shirt', material: lemonadeGuyShirtMat },
         { name: 'Pants', material: lemonadeGuyPantsMat },
