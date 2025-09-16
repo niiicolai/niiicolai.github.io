@@ -19,7 +19,7 @@ const renderedBody = computed(() => md.render(props.article.body));
 
 <template>
     <article class="w-full" :class="`${idx % 2 == 1 ? 'bg-gray-900 text-white' : 'bg-gray-100'}`">
-        <div class="max-w-2xl w-1/2 mx-auto py-24 p-6 flex flex-col gap-6">
+        <div class="p-6 md:w-1/2 mx-auto py-24 flex flex-col gap-6">
             <header>
                 <h2 class="text-4xl font-bold mb-2">
                     {{ article.header }}
@@ -27,7 +27,7 @@ const renderedBody = computed(() => md.render(props.article.body));
                 <p class="text-lg">
                     {{ article.subheader }}
                 </p>
-                <div class="mt-2 text-sm flex gap-4">
+                <div class="mt-2 text-sm flex flex-col md:flex-row md:gap-4">
                     <span>Published: {{ article.published }}</span>
                     <span>Last modified: {{ article.modified }}</span>
                 </div>
@@ -110,6 +110,7 @@ const renderedBody = computed(() => md.render(props.article.body));
 .markdown a {
     color: #2563eb;
     text-decoration: underline;
+    word-wrap: break-word;
 }
 
 .markdown code {

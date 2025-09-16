@@ -39,7 +39,7 @@ const scrollToDisclaimer = () => {
   </div>
 
   <div class="w-full h-screen bg-gray-900 text-white flex flex-col items-center justify-center">
-    <div class="p-6 max-w-2xl mx-auto gap-4 flex flex-col items-start justify-center w-1/2">
+    <div class="p-6 md:w-1/2 mx-auto gap-4 flex flex-col items-start justify-center">
       <div class="flex flex-col gap-1 border-b border-orange-500 pb-3 w-full">
         <h1 class="text-2xl font-bold">
           bergandersen.com
@@ -56,7 +56,7 @@ const scrollToDisclaimer = () => {
   </div>
 
   <div class="w-full h-screen bg-gray-800 text-white flex flex-col items-center justify-center">
-    <div class="p-6 max-w-2xl mx-auto gap-3 flex flex-col items-start justify-center w-1/2">
+    <div class="p-6 md:w-1/2 mx-auto gap-3 flex flex-col items-start justify-center">
       <div class="flex flex-col gap-3 border-b border-orange-500 pb-3 w-full">
         <h1 class="text-xl font-bold">
           Table of Contents
@@ -93,7 +93,7 @@ const scrollToDisclaimer = () => {
 
   <div class="w-full h-screen bg-gray-900 text-white flex flex-col items-center justify-center"
     :ref="div => disclaimerRef = div">
-    <div class="p-6 max-w-2xl mx-auto gap-3 flex flex-col items-start justify-center w-1/2">
+    <div class="p-6 md:w-1/2 mx-auto mx-auto gap-3 flex flex-col items-start justify-center">
       <div class="flex flex-col gap-1 border-b border-orange-500 pb-3 w-full">
         <h1 class="text-xl font-bold">
           Disclaimer
@@ -109,7 +109,7 @@ const scrollToDisclaimer = () => {
 
   <div class="w-full h-screen bg-gray-800 text-white flex flex-col items-center justify-center"
     :ref="div => authorRef = div">
-    <div class="p-6 max-w-2xl mx-auto gap-3 flex flex-col items-start justify-center w-1/2">
+    <div class="p-6 md:w-1/2 mx-auto gap-3 flex flex-col items-start justify-center">
       <div class="flex flex-col gap-1 border-b border-orange-500 pb-3 w-full">
         <h1 class="text-xl font-bold">
           The Author
