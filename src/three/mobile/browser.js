@@ -164,14 +164,7 @@ export function createBrowser(mobile) {
   const websiteMainDescText = new Text();
   about.mesh.add(websiteMainDescText);
   websiteMainDescText.text =
-    "Welcome to my website! I'm a full-stack developer\nfrom Denmark who enjoys building things —\n" +
-    "sometimes practical, sometimes experimental,\nalways driven by curiosity.\n\n" +
-    "I have a background in computer science and years\nof hands-on experience building everything from\n" +
-    "web platforms to multiplayer game systems. My\nstack includes tools like JavaScript/TypeScript,\n" +
-    "Node.js, React, MySQL, MongoDB, and WebSocket,\nand I often work with technologies like Docker,\n" +
-    "Unity, and Blender.\n\n" +
-    "Whether it's crafting backend systems, designing\nfrontend interfaces, or exploring new tech,\n" +
-    "I'm always up for a challenge. Take a look around!";
+    "Welcome to my website!";
   websiteMainDescText.fontSize = 0.006;
   websiteMainDescText.position.x = -0.073;
   websiteMainDescText.position.y = 0.083;

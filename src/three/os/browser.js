@@ -193,14 +193,7 @@ export async function createBrowser(os, camera) {
     const websiteMainDescText = new Text();
     wrapper.add(websiteMainDescText);
     websiteMainDescText.text =
-      "Welcome to my website! I'm a full-stack developer from Denmark who enjoys building things —\n" +
-      "sometimes practical, sometimes experimental, always driven by curiosity.\n\n" +
-      "I have a background in computer science and years of hands-on experience building everything from\n" +
-      "web platforms to multiplayer game systems. My stack includes tools like JavaScript/TypeScript,\n" +
-      "Node.js, React, MySQL, MongoDB, and WebSocket, and I often work with technologies like Docker,\n" +
-      "Unity, and Blender.\n\n" +
-      "Whether it's crafting backend systems, designing frontend interfaces, or exploring new tech,\n" +
-      "I'm always up for a challenge. Take a look around!";
+      "Welcome to my website!";
     websiteMainDescText.fontSize = 0.015;
     websiteMainDescText.position.x = -0.384;
     websiteMainDescText.position.y = 0.1;

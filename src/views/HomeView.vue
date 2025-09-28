@@ -103,9 +103,7 @@ const toggleTableOfContents = () => {
           bergandersen.com
         </h1>
         <p class="text-md">
-          Weekly practical examples of common Node.js vulnerabilities, along with actionable strategies for
-          mitigating
-          them.
+          Weekly practical examples of common vulnerabilities, along with actionable strategies for mitigating them.
         </p>
       </div>
       <p class="text-sm text-gray-300">
@@ -144,14 +142,7 @@ const toggleTableOfContents = () => {
       </p>
       <p class="text-sm">
         I have a broad interest in many areas of software development, including JavaScript, Ruby, Python, image
-        processing, and microcontrollers. This part of my website is dedicated to security in Node.js.
-      </p>
-      <p class="text-sm">
-        I recently graduated with a bachelor’s degree in Software Development and also hold an AP Graduate degree in
-        Computer Science, along with a vocational education in IT support.
-      </p>
-      <p class="text-sm">
-        I enjoy exploring security topics and sharing practical insights with developers.
+        processing, and microcontrollers. This part of my website is dedicated to security.
       </p>
       <p class="text-sm">
         If you have any questions or feedback, feel free to contact me at: <a href="mailto:contact@bergandersen.com"
