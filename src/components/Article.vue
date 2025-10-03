@@ -53,16 +53,19 @@ const readingTime = computed(() => estimateReadingTimeMarkdown(props.article.bod
         <div class="p-6 lg:w-1/2 mx-auto py-24 flex flex-col gap-6">
             <header>
                 <div
-                    class="mb-2 border-b highlight-border-color pb-3 flex flex-col lg:flex-row items-center justify-between gap-3">
+                    class="mb-2 border-b highlight-border-color pb-3 flex flex-col lg:flex-row items-center justify-between text-center lg:text-left gap-3">
                     <div>
                         <h2 class="text-4xl font-bold mb-3">
                             {{ article.header }}
                         </h2>
+                        
                         <h3 class="text-xl text-gray-100">
                             {{ article.subheader }}
                         </h3>
                     </div>
                 </div>
+
+
                 <div class="flex flex-row gap-3 lg:items-center justify-center lg:justify-start">
                     <div class="text-sm text-gray-100 flex gap-3">
                         <span>Written: {{ article.published }}</span>
