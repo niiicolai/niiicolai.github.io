@@ -1,6 +1,6 @@
 export default {
   header: "Command Injection",
-  subheader: "Developing an API for IP Ping Requests",
+  subheader: "Developing an API for IP ping requests",
   published: "2025-09-15",
   modified: "2025-09-22",
   dependencies: [

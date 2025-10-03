@@ -1,6 +1,6 @@
 export default {
   header: "SQL Injection",
-  subheader: "An API for Your Blog Posts",
+  subheader: "An API for your blog posts",
   published: "2025-09-22",
   modified: "2025-09-22",
   dependencies: [

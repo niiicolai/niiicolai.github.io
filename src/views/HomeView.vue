@@ -25,11 +25,15 @@ const toggleTableOfContents = () => {
 </script>
 
 <template>
-  <div class="absolute top-3 right-3">
+  <div class="absolute top-3 right-3 flex flex-col gap-2 items-end">
     <router-link to="/os" class="highlight-color highlight-color-hover italic transition-colors duration-200">
       Looking for my interactive 3D site?
     </router-link>
+    <a href="https://coding-challenges.bergandersen.com/" target="_blank" class="highlight-color highlight-color-hover italic transition-colors duration-200">
+      Free coding challenges
+    </a>
   </div>
+  
 
   <div
     :class="`${showTableOfContents ? '' : 'hidden'} fixed z-10 top-0 bottom-0 left-0 bg-black border-r border-black text-white lg:flex flex-col items-center justify-start`">
@@ -204,7 +208,7 @@ const toggleTableOfContents = () => {
     </div>
   </div>
 
-  <div class="w-full min-h-screen gap-0 flex flex-col items-center justify-center lg:pl-64">
+  <div class="w-full min-h-screen gap-0 flex flex-col items-center justify-center lg:pl-62">
     <div class="w-full" v-for="(article, idx) in articles" :key="idx" :ref="el => articleRefs[idx] = el">
       <Article :idx="idx" :article="article"></Article>
     </div>
