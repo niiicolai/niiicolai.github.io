@@ -1,12 +1,10 @@
 import { createWebHashHistory, createRouter } from 'vue-router'
 
-import HomeView from '../views/HomeView.vue'
-import SceneView from '../views/SceneView.vue'
+import ClosedView from '../views/ClosedView.vue'
 import NotFoundView from '../views/error/NotFound.vue'
 
 const routes = [
-  { path: '/', component: HomeView },
-  { path: '/os', component: SceneView },
+  { path: '/', component: ClosedView },
   { path: '/:pathMatch(.*)*', component: NotFoundView },
 ]
 
