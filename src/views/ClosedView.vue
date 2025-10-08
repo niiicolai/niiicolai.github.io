@@ -6,11 +6,6 @@
     <h1 class="highlight-color text-3xl">
       bergandersen.com
     </h1>
-    <p class="text-white">
-      Hi, thanks for stopping by.<br />
-      I'm sorry to share that I've decided to close the blog.<br />
-      Best regards, Nicolai
-    </p>
   </div>
 </template>
 
