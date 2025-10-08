@@ -164,7 +164,6 @@ const readingTime = computed(() => estimateReadingTimeMarkdown(props.article.bod
 
 .markdown a {
     color: #a6e22e;
-    hover: #a6e22e;
     text-decoration: underline;
     word-wrap: break-word;
 }
