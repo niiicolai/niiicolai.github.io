@@ -7,7 +7,7 @@
       bergandersen.com
     </h1>
 
-    <div class="grid grid-cols-3 gap-3">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
       <a href="https://www.bergandersen.com/two-easy-engine/" target="_blank"
         class="border rounded-md px-3 py-3 highlight-color highlight-color-hover transition-colors duration-200">
         TwoEasyEngine
