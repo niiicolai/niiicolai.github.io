@@ -1,8 +1,78 @@
 <script setup>
+import * as Two from "two-easy-engine";
+import { ref, onMounted, onBeforeUnmount } from "vue";
+
+const canvasRef = ref(null);
+
+onMounted(() => {
+  const canvas = canvasRef.value;
+  if (!canvas) return;
+
+  const clock = new Two.Clock();
+  const camera = new Two.Camera2D();
+  const scene = new Two.Scene();
+  const renderer = new Two.Renderer2D(canvas, scene, camera, {
+    width: window.innerWidth,
+    height: window.innerHeight,
+    devicePixelRatio: window.devicePixelRatio || 1,
+    backgroundColor: "black",
+  });
+
+  const lights = [];
+  const num = 80;
+
+  for (let i = 0; i < num; i++) {
+    const color = new Two.HslaColor((i * Math.random() * 15) % 300, 100, 60, 1);
+    const colorStop = new Two.HslaColor(color.h, 100, 60, 0);
+    const light = new Two.PointLight2D(
+      Math.random() * 3,
+      Math.random() * 10,
+      color,
+      colorStop
+    );
+    light.transform.position.set(Math.random() * window.innerWidth, Math.random() * window.innerHeight);
+    scene.add(light);
+    lights.push(light);
+  }
+
+  const handleResize = () => {
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  };
+  window.addEventListener("resize", handleResize);
+
+  const moveSpeed = 0.3;
+  const hueSpeed = 0.1;
+
+  const anim = renderer.requestAnimationFrame({
+    beforeRender: () => {
+      const time = clock.getElapsedTime();
+      const hue = (time * 60 * hueSpeed) % 360;
+
+      for (let i = 0; i < num; i++) {
+        const light = lights[i];
+        light.intensity = Math.random() * 2;
+        light.color.setHue(hue);
+        light.transform.position.y += moveSpeed;
+
+        if (light.transform.position.y > window.innerHeight + 20) {
+          light.transform.position.set(Math.random() * window.innerWidth, -20);
+        }
+      }
+    },
+  });
+
+  onBeforeUnmount(() => {
+    window.removeEventListener("resize", handleResize);
+    renderer.cancelAnimationFrame(anim);
+    renderer.dispose?.();
+  });
+});
 </script>
 
 <template>
-  <div class="main-bg flex flex-col items-center justify-center h-screen text-center gap-3">
+  <canvas ref="canvasRef" class="fixed w-full h-screen z-1" />
+
+  <div class="fixed z-2 flex flex-col items-center justify-center w-full h-screen text-center gap-3">
     <h1 class="highlight-color text-3xl mb-3">
       bergandersen.com
     </h1>
@@ -19,6 +89,10 @@
       <a href="https://coding-challenges.bergandersen.com/" target="_blank"
         class="border rounded-md px-3 py-3 highlight-color highlight-color-hover transition-colors duration-200">
         Coding Challenges
+      </a>
+      <a href="https://www.bergandersen.com/vector-math-animation/" target="_blank"
+        class="border rounded-md px-3 py-3 highlight-color highlight-color-hover transition-colors duration-200">
+        Vector Fundamentals
       </a>
     </div>
   </div>
