@@ -2,7 +2,7 @@
 import * as Two from "two-easy-engine";
 import { ref, onMounted, onBeforeUnmount } from "vue";
 
-const widgetWidth = ref((window.innerWidth < 650) ? 300 : 600);
+const widgetWidth = ref((window.innerWidth < 700) ? 300 : 650);
 const canvasRef = ref(null);
 
 onMounted(() => {
@@ -38,7 +38,7 @@ onMounted(() => {
 
   const handleResize = () => {
     renderer.options.setSize(window.innerWidth, window.innerHeight);
-    widgetWidth.value = (window.innerWidth < 650) ? 300 : 600;
+    widgetWidth.value = (window.innerWidth < 700) ? 300 : 650;
   };
   window.addEventListener("resize", handleResize);
 
