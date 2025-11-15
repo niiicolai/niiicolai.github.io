@@ -96,6 +96,10 @@ onMounted(() => {
         class="border rounded-md px-3 py-3 highlight-color highlight-color-hover transition-colors duration-200">
         Vector Fundamentals
       </a>
+      <a href="https://niiicolai.github.io/widget-project-status-dashboard" target="_blank"
+        class="border rounded-md px-3 py-3 highlight-color highlight-color-hover transition-colors duration-200">
+        Project Status Dashboard
+      </a>
     </div>
 
     <hr class="border w-96 highlight-border-color mt-3 mb-3" />
@@ -103,7 +107,7 @@ onMounted(() => {
     <div>
       <h2 class="highlight-color text-xl mb-3">Project Status Dashboard</h2>
       <iframe
-        src="https://niiicolai.github.io/widget-project-status-dashboard/#/dashboard?data_url=https://raw.githubusercontent.com/niiicolai/niiicolai/refs/heads/main/projects.json&display_credit=1"
+        src="https://niiicolai.github.io/widget-project-status-dashboard/#/dashboard?data_url=https://raw.githubusercontent.com/niiicolai/niiicolai/refs/heads/main/projects.json"
         height="270px" :width="widgetWidth" style="border:none;border-radius: 0.5em;"></iframe>
     </div>
   </div>
