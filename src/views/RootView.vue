@@ -2,7 +2,7 @@
 import * as Two from "two-easy-engine";
 import { ref, onMounted, onBeforeUnmount } from "vue";
 
-const widgetWidth = ref(600);
+const widgetWidth = ref((window.innerWidth < 650) ? 300 : 600);
 const canvasRef = ref(null);
 
 onMounted(() => {
@@ -74,7 +74,7 @@ onMounted(() => {
 <template>
   <canvas ref="canvasRef" class="fixed w-full h-screen z-1" />
 
-  <div class="fixed z-2 flex flex-col items-center justify-center w-full h-screen text-center gap-3">
+  <div class="fixed z-2 flex flex-col items-center justify-center w-full min-h-screen text-center gap-3">
     <h1 class="highlight-color text-3xl mb-3">
       bergandersen.com
     </h1>
