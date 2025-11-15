@@ -2,6 +2,7 @@
 import * as Two from "two-easy-engine";
 import { ref, onMounted, onBeforeUnmount } from "vue";
 
+const widgetWidth = ref(600);
 const canvasRef = ref(null);
 
 onMounted(() => {
@@ -36,7 +37,8 @@ onMounted(() => {
   }
 
   const handleResize = () => {
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.options.setSize(window.innerWidth, window.innerHeight);
+    widgetWidth.value = (window.innerWidth < 650) ? 300 : 600;
   };
   window.addEventListener("resize", handleResize);
 
@@ -94,6 +96,15 @@ onMounted(() => {
         class="border rounded-md px-3 py-3 highlight-color highlight-color-hover transition-colors duration-200">
         Vector Fundamentals
       </a>
+    </div>
+
+    <hr class="border w-96 highlight-border-color mt-3 mb-3" />
+
+    <div>
+      <h2 class="highlight-color text-xl mb-3">Project Status Dashboard</h2>
+      <iframe
+        src="https://niiicolai.github.io/widget-project-status-dashboard/#/dashboard?data_url=https://raw.githubusercontent.com/niiicolai/niiicolai/refs/heads/main/projects.json&display_credit=1"
+        height="270px" :width="widgetWidth" style="border:none;border-radius: 0.5em;"></iframe>
     </div>
   </div>
 </template>
