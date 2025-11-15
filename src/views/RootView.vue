@@ -74,8 +74,8 @@ onMounted(() => {
 <template>
   <canvas ref="canvasRef" class="fixed w-full h-screen z-1" />
 
-  <div class="fixed z-2 flex flex-col items-center justify-center w-full min-h-screen text-center gap-3">
-    <h1 class="highlight-color text-3xl mb-3">
+  <div class="relative z-2 flex flex-col gap-3 items-center justify-center w-full min-h-screen text-center gap-3 p-6">
+    <h1 class="highlight-color text-3xl">
       bergandersen.com
     </h1>
 
