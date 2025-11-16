@@ -68,7 +68,7 @@ onMounted(() => {
 
       <div class="grid grid-cols-1 gap-3">
         <div class="min-h-screen w-full px-10 py-20 flex flex-col items-center justify-center 
-            bg-gray-900 rounded-md border highlight-border-color">
+            rounded-md border highlight-border-color">
 
           <div class="w-full">
 
@@ -171,7 +171,7 @@ onMounted(() => {
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
           <div class="w-full p-10 py-20 flex flex-col items-center justify-center 
-            bg-gray-900 text-center rounded-md border highlight-border-color">
+            text-center rounded-md border highlight-border-color">
 
             <div class="w-full">
 
@@ -226,7 +226,7 @@ onMounted(() => {
           </div>
 
           <div class="w-full p-10 py-20 flex flex-col items-center justify-center 
-            bg-gray-900 text-center rounded-md border highlight-border-color">
+            text-center rounded-md border highlight-border-color">
 
             <div class="w-full">
 
@@ -336,10 +336,12 @@ onMounted(() => {
 
           </div>
         </div>
+
+        <footer class="py-5 w-full text-center rounded-md highlight-color border highlight-border-color">
+          bergandersen.com - 2025
+        </footer>
       </div>
-
     </div>
-
   </div>
 </template>
 
