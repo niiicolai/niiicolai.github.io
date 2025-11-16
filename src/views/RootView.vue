@@ -1,25 +1,19 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";
 import { useAnimatedBackground } from "../composables/useAnimatedBackground";
-import { useAnimatedHeader } from "../composables/useAnimatedHeader";
 
 const canvasRef = ref(null);
-const canvasHeaderRef = ref(null);
 const animatedBackground = useAnimatedBackground();
-const animatedHeader = useAnimatedHeader();
 
 onMounted(() => {
   const canvasBgg = canvasRef.value;
-  const canvasHeader = canvasHeaderRef.value;
 
   if (!canvasBgg && !canvasHeader) return;
 
   const disposeBgg = animatedBackground.init(canvasBgg);
-  const disposeHeader = animatedHeader.init(canvasHeader);
 
   onBeforeUnmount(() => {
     disposeBgg();
-    disposeHeader();
   });
 });
 </script>
@@ -45,10 +39,9 @@ onMounted(() => {
 
       <hr class="border w-full highlight-border-color mt-3 mb-3" />
 
-      <div class="relative mb-3 w-full h-screen/0.5 rounded-md border highlight-border-color">
-        <canvas ref="canvasHeaderRef" class="relative w-full h-screen/0.5" />
+      <div class="mb-3 w-full h-screen rounded-md border highlight-border-color flex flex-col justify-center p-6">
         <div
-          class="highlight-color text-center absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center p-6">
+          class="highlight-color text-center">
           <h2 class="text-xl lg:text-3xl lg:max-w-1/2 mx-auto mb-4 font-extrabold">
             Hey there! Glad you stopped by!
           </h2>
