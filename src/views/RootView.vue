@@ -56,7 +56,7 @@ onMounted(() => {
       <div class="w-full mb-3">
         <iframe
           src="https://niiicolai.github.io/widget-project-status-dashboard/#/dashboard?data_url=https://raw.githubusercontent.com/niiicolai/niiicolai/refs/heads/main/projects.json"
-          height="270px" width="100%" style="border:none;border-radius: 0.5em;"></iframe>
+          height="370px" width="100%" style="border:none;border-radius: 0.5em;"></iframe>
       </div>
 
       <div class="grid grid-cols-1 gap-3">
