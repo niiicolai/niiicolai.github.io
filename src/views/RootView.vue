@@ -40,8 +40,7 @@ onMounted(() => {
       <hr class="border w-full highlight-border-color mt-3 mb-3" />
 
       <div class="mb-3 w-full h-screen rounded-md border highlight-border-color flex flex-col justify-center p-6">
-        <div
-          class="highlight-color text-center">
+        <div class="highlight-color text-center">
           <h2 class="text-xl lg:text-3xl lg:max-w-1/2 mx-auto mb-4 font-extrabold">
             Hey there! Glad you stopped by!
           </h2>
@@ -60,6 +59,45 @@ onMounted(() => {
       </div>
 
       <div class="grid grid-cols-1 gap-3">
+        <div class="min-h-screen w-full px-10 py-20 flex flex-col items-center justify-center 
+            rounded-md border highlight-border-color">
+
+          <div class="w-full">
+
+            <h1 class="text-4xl font-extrabold mb-6 leading-tight max-w-3xl mx-auto ">
+              <a href="https://learn.bergandersen.com/" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
+                Learning Platform
+              </a>
+            </h1>
+
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto 
+                  text-gray-300 lg:text-justify">
+              A place where I share technical tutorials in both Danish and English. These tutorials combine written material with interactive tasks.
+            </p>
+
+            <div class="mb-10 w-full flex justify-center">
+              <img src="/examples/learning-platform-example.png" alt="Learning Platform example"
+                class="w-full max-w-3xl rounded-xl shadow-2xl border-4 highlight-border-color" />
+            </div>
+
+
+            <div class="flex flex-wrap justify-center gap-3 mb-6">
+              <span class="text-sm font-semibold px-4 py-2 rounded-full 
+                     bg-blue-400 text-gray-900 shadow-md">
+                Tutorials
+              </span>
+            </div>
+
+            <div class="flex gap-6 w-full justify-center items-center">
+              <a href="https://learn.bergandersen.com/" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
+                Visit Website
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div class="min-h-screen w-full px-10 py-20 flex flex-col items-center justify-center 
             rounded-md border highlight-border-color">
 
@@ -115,10 +153,10 @@ onMounted(() => {
         </div>
 
         <div class="w-full mb-3">
-        <iframe
-          src="https://niiicolai.github.io/widget-github-repo-tracker/#/dashboard?github_username=niiicolai&repository_name=two-easy-engine"
-          height="414px" width="100%" style="border:none;border-radius: 0.5em;"></iframe>
-      </div>
+          <iframe
+            src="https://niiicolai.github.io/widget-github-repo-tracker/#/dashboard?github_username=niiicolai&repository_name=two-easy-engine"
+            height="414px" width="100%" style="border:none;border-radius: 0.5em;"></iframe>
+        </div>
 
         <div class="w-full px-10 py-20 flex flex-col items-center justify-center 
             bg-gray-900 text-center rounded-md border highlight-border-color">
