@@ -430,7 +430,7 @@ onMounted(() => {
         </div>
 
         <footer class="py-5 w-full text-center rounded-md highlight-color border highlight-border-color">
-          bergandersen.com - 2025
+          bergandersen.com | 2025 - 2026
         </footer>
       </div>
     </div>
