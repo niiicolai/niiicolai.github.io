@@ -484,7 +484,7 @@ onMounted(() => {
           <div class="w-full">
 
             <h1 class="text-4xl text-left font-extrabold mb-6 leading-tight max-w-3xl mx-auto">
-              <a href="https://niiicolai.github.io/widget-github-repo-tracker" target="_blank"
+              <a href="https://niiicolai.github.io/widget-github-user-tracker" target="_blank"
                 class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
                 GitHub User Tracker
               </a>
