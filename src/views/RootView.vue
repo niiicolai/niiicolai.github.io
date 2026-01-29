@@ -110,15 +110,15 @@ onMounted(() => {
           <div class="w-full">
 
             <h1 class="text-4xl font-extrabold mb-6 leading-tight max-w-3xl mx-auto ">
-              <a href="https://learn.bergandersen.com/" target="_blank"
+              <a href="https://bergandersen.com/ai" target="_blank"
                 class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                AI Projects
+                Projects built with artificial intelligence.
               </a>
             </h1>
 
             <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto 
                   text-gray-300 lg:text-justify">
-              Showcasing innovative projects built with artificial intelligence.
+              Showcasing projects built with artificial intelligence tools, such as OpenCode.
             </p>
 
             <div class="mb-10 w-full flex justify-center">
@@ -139,7 +139,7 @@ onMounted(() => {
             </div>
 
             <div class="flex gap-6 w-full justify-center items-center">
-              <a href="https://ai.bergandersen.com/" target="_blank"
+              <a href="https://bergandersen.com/ai" target="_blank"
                 class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
                 Visit Website
               </a>
