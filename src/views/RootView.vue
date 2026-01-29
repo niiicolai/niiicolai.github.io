@@ -104,6 +104,49 @@ onMounted(() => {
           <div class="w-full">
 
             <h1 class="text-4xl font-extrabold mb-6 leading-tight max-w-3xl mx-auto ">
+              <a href="https://learn.bergandersen.com/" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
+                AI Projects
+              </a>
+            </h1>
+
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto 
+                  text-gray-300 lg:text-justify">
+              Showcasing innovative projects built with artificial intelligence.
+            </p>
+
+            <div class="mb-10 w-full flex justify-center">
+              <img src="/examples/ai-example-page.png" alt="Learning Platform example"
+                class="w-full max-w-3xl rounded-xl shadow-2xl border-4 highlight-border-color" />
+            </div>
+
+
+            <div class="flex flex-wrap justify-center gap-3 mb-6">
+              <span class="text-sm font-semibold px-4 py-2 rounded-full 
+                     bg-blue-400 text-gray-900 shadow-md">
+                LLM
+              </span>
+              <span class="text-sm font-semibold px-4 py-2 rounded-full 
+                     bg-blue-400 text-gray-900 shadow-md">
+                Agentic AI
+              </span>
+            </div>
+
+            <div class="flex gap-6 w-full justify-center items-center">
+              <a href="https://ai.bergandersen.com/" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
+                Visit Website
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="min-h-screen w-full px-10 py-20 flex flex-col items-center justify-center 
+            rounded-md border highlight-border-color">
+
+          <div class="w-full">
+
+            <h1 class="text-4xl font-extrabold mb-6 leading-tight max-w-3xl mx-auto ">
               <a href="https://www.bergandersen.com/two-easy-engine/" target="_blank"
                 class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
                 TwoEasyEngine
