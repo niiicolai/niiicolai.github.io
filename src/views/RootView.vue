@@ -261,6 +261,12 @@ onMounted(() => {
           </div>
         </div>
 
+        <div class="w-full mb-3">
+          <iframe src="https://niiicolai.github.io/widget-snake-game/#/snake" height="810px" width="100%"
+            frameborder="0" scrolling="no" style="border:none;border-radius: 0.5em;">
+          </iframe>
+        </div>
+
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
           <div class="w-full p-10 py-20 flex flex-col items-center justify-center 
             text-center rounded-md border highlight-border-color">
@@ -583,6 +589,60 @@ onMounted(() => {
               </a>
 
               <a href="https://niiicolai.github.io/widget-ping-pong-game" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
+                Visit Demo
+              </a>
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <div class="w-full px-10 py-20 flex flex-col items-center justify-center 
+           bg-gray-900 text-center rounded-md border highlight-border-color">
+
+          <div class="w-full">
+
+            <h1 class="text-4xl text-left font-extrabold mb-6 leading-tight max-w-3xl mx-auto">
+              <a href="https://niiicolai.github.io/widget-snake-game" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
+                Snake Game Widget
+              </a>
+            </h1>
+
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto 
+                  text-gray-300 lg:text-justify">
+              An embeddable iframe widget with an interactive snake game.
+            </p>
+
+            <div class="mb-10 w-full flex justify-center">
+              <img src="/examples/snake-game-widget.png" alt="Github user tracker example"
+                class="w-full max-w-3xl rounded-xl shadow-2xl border-4 highlight-border-color" />
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-3 mb-6">
+              <span class="text-sm font-semibold px-4 py-2 rounded-full 
+                     bg-blue-400 text-gray-900 shadow-md">
+                JavaScript
+              </span>
+              <span class="text-sm font-semibold px-4 py-2 rounded-full 
+                     bg-gray-700 text-gray-200">
+                Iframe Widget
+              </span>
+              <span class="text-sm font-semibold px-4 py-2 rounded-full 
+                     bg-gray-700 text-gray-200">
+                React.js
+              </span>
+            </div>
+
+            <div class="flex gap-6 w-full justify-center items-center">
+              <a href="https://github.com/niiicolai/widget-snake-game" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
+                GitHub Repository
+              </a>
+
+              <a href="https://niiicolai.github.io/widget-snake-game" target="_blank"
                 class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
                 Visit Demo
               </a>
