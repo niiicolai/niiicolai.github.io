@@ -124,7 +124,7 @@ onMounted(() => {
             </p>
 
             <div class="mb-10 w-full flex justify-center">
-              <img src="/examples/c7pixel.png" alt="Learning Platform example"
+              <img src="/examples/c7pixel.png" alt="c7pixel example"
                 class="w-full max-w-3xl rounded-xl shadow-2xl border-4 highlight-border-color" />
             </div>
 
