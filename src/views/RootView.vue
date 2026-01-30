@@ -59,6 +59,8 @@ onMounted(() => {
       </div>
 
       <div class="grid grid-cols-1 gap-3">
+
+
         <div class="min-h-screen w-full px-10 py-20 flex flex-col items-center justify-center 
             rounded-md border highlight-border-color">
 
@@ -102,6 +104,49 @@ onMounted(() => {
         <div class="w-full mb-3">
           <iframe src="https://niiicolai.github.io/widget-github-user-tracker/#/widget?github_username=niiicolai"
             height="440px" width="100%" style="border:none;border-radius: 0.5em;"></iframe>
+        </div>
+
+        <div class="min-h-screen w-full px-10 py-20 flex flex-col items-center justify-center 
+            bg-gray-900 rounded-md border highlight-border-color">
+
+          <div class="w-full">
+
+            <h1 class="text-4xl font-extrabold mb-6 leading-tight max-w-3xl mx-auto ">
+              <a href="https://c7pixel.com/" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
+                C7Pixel
+              </a>
+            </h1>
+
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto 
+                  text-gray-300 lg:text-justify">
+              A website I use for showcasing games.
+            </p>
+
+            <div class="mb-10 w-full flex justify-center">
+              <img src="/examples/c7pixel.png" alt="Learning Platform example"
+                class="w-full max-w-3xl rounded-xl shadow-2xl border-4 highlight-border-color" />
+            </div>
+
+
+            <div class="flex flex-wrap justify-center gap-3 mb-6">
+              <span class="text-sm font-semibold px-4 py-2 rounded-full 
+                     bg-blue-400 text-gray-900 shadow-md">
+                Ruby on Rails
+              </span>
+              <span class="text-sm font-semibold px-4 py-2 rounded-full 
+                     bg-blue-400 text-gray-900 shadow-md">
+                Unity Games
+              </span>
+            </div>
+
+            <div class="flex gap-6 w-full justify-center items-center">
+              <a href="https://c7pixel.com/" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
+                Visit Website
+              </a>
+            </div>
+          </div>
         </div>
 
         <div class="min-h-screen w-full px-10 py-20 flex flex-col items-center justify-center 
