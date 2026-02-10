@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";
 import { useAnimatedBackground } from "../composables/useAnimatedBackground";
-
+import CredlyBadge from "../components/CredlyBadge.vue";
 const canvasRef = ref(null);
 const animatedBackground = useAnimatedBackground();
 
@@ -697,6 +697,28 @@ onMounted(() => {
 
           </div>
         </div>
+
+        <div class="w-full px-10 py-20 flex flex-col items-center justify-center 
+           bg-gray-900 text-center rounded-md border highlight-border-color">
+
+          <div class="w-full">
+
+            <h1 class="text-4xl highlight-color text-left font-extrabold mb-6 leading-tight max-w-3xl mx-auto">
+              Certifications
+            </h1>
+
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto 
+                  text-gray-300 lg:text-justify">
+              Find the Credly badges I've earned below.
+            </p>
+
+            <div class="mb-10 w-full flex justify-center">
+              <CredlyBadge badge-id="e74f1a47-2fa9-4e90-8fe9-7b57686b281c" width="350" height="450" />
+            </div>
+          </div>
+        </div>
+
+
 
         <footer class="py-5 w-full text-center rounded-md highlight-color border highlight-border-color">
           bergandersen.com | 2025 - 2026
