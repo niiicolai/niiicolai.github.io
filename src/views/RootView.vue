@@ -107,8 +107,8 @@ onMounted(() => {
         </div>
 
         <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
-          <a href="https://bergandersen.com/ai" target="_blank"><img src="/examples/ai-example-page.png"
-              alt="AI website example" class="w-full border-b border-neutral-500" /></a>
+          <img src="/examples/ai-example-page.png"
+              alt="AI website example" class="w-full border-b border-neutral-500" />
 
           <div class="p-3 flex flex-col gap-2">
             <a href="https://bergandersen.com/ai" target="_blank" class="text-xl block font-extrabold hover:underline">
