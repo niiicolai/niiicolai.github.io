@@ -38,8 +38,7 @@ onMounted(() => {
               Nicolai Berg Andersen
             </h2>
             <p class="text-sm">
-              Welcome to my main website where I share all kinds of
-              development related content.
+              Welcome to my website where I share development related content.
             </p>
           </div>
         </div>
