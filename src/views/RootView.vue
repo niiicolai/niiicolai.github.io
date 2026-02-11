@@ -21,710 +21,354 @@ onMounted(() => {
 <template>
   <canvas ref="canvasRef" class="fixed w-full h-screen z-1" />
 
-  <div class="relative z-2 flex flex-col gap-3 items-center justify-center w-full min-h-screen gap-3 p-6">
-    <div class="md:w-128 lg:w-256">
-      <header class="w-full h-32 flex flex-col gap-3 items-center justify-center sm:flex-row sm:h-8 sm:justify-between">
-        <h1 class="highlight-color text-3xl">
-          bergandersen.com
-        </h1>
+  <div class="relative z-2">
+    <div class="w-full h-8 bg-neutral-900 border-b border-neutral-500 text-neutral-200 px-3"></div>
 
-        <div class="h-8 flex gap-3 items-center justify-end">
-          <a href="https://www.linkedin.com/in/nicolai-berg-andersen-ab1279b3/" target="_blank"
-            class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">LinkedIn</a>
-          <div class="highlight-border-color border"></div>
-          <a href="https://github.com/niiicolai" target="_blank"
-            class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">GitHub</a>
+    <div
+      class="mx-auto p-3 md:p-0 md:py-6 md:w-128 lg:w-256 flex flex-col lg:flex-row items-start justify-between gap-3 lg:gap-6">
+      <div class="w-full lg:w-96 flex flex-col gap-3">
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200">
+          <div class="relative highlight-bg-color p-3 h-16 mb-5">
+            <img src="/avatar.webp" alt="avatar"
+              class="rounded-full border border-neutral-500 w-16 absolute -bottom-6" />
+          </div>
+
+          <div class="p-3">
+            <h2 class="text-md mb-2 font-extrabold">
+              Nicolai Berg Andersen
+            </h2>
+            <p class="text-sm">
+              Welcome to my main website where I share all kinds of
+              development related content.
+            </p>
+          </div>
         </div>
-      </header>
 
-      <hr class="border w-full highlight-border-color mt-3 mb-3" />
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200">
+          <div class="highlight-bg-color h-3"></div>
 
-      <div class="mb-3 w-full h-screen rounded-md border highlight-border-color flex flex-col justify-center p-6">
-        <div class="highlight-color text-center">
-          <h2 class="text-xl lg:text-3xl lg:max-w-1/2 mx-auto mb-4 font-extrabold">
-            Hey there! Glad you stopped by!
-          </h2>
-          <p class="text-md lg:text-lg lg:max-w-1/2 mx-auto">
-            I'm <strong>Nicolai Berg Andersen</strong>, and I develop stuff for the web.
-            I hope you will find my collection of personal projects interesting.
-            The collection is a mix of fun and experimental projects.
-          </p>
-        </div>
-      </div>
-
-      <div class="w-full mb-3">
-        <iframe
-          src="https://niiicolai.github.io/widget-project-status-dashboard/#/dashboard?data_url=https://raw.githubusercontent.com/niiicolai/niiicolai/refs/heads/main/projects.json"
-          height="370px" width="100%" style="border:none;border-radius: 0.5em;"></iframe>
-      </div>
-
-      <div class="grid grid-cols-1 gap-3">
-
-
-        <div class="min-h-screen w-full px-10 py-20 flex flex-col items-center justify-center 
-            rounded-md border highlight-border-color">
-
-          <div class="w-full">
-
-            <h1 class="text-4xl font-extrabold mb-6 leading-tight max-w-3xl mx-auto ">
-              <a href="https://learn.bergandersen.com/" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                Learning Platform
-              </a>
-            </h1>
-
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto 
-                  text-gray-300 lg:text-justify">
-              A place where I share technical tutorials in both Danish and English. These tutorials combine written
-              material with interactive tasks.
+          <div class="p-3">
+            <h2 class="text-md mb-2 font-extrabold">
+              Certificates
+            </h2>
+            <p class="text-sm mb-2">
+              Find the certificates I've earned below.
             </p>
 
-            <div class="mb-10 w-full flex justify-center">
-              <img src="/examples/learning-platform-example.png" alt="Learning Platform example"
-                class="w-full max-w-3xl rounded-xl shadow-2xl border-4 highlight-border-color" />
+            <CredlyBadge badge-id="e74f1a47-2fa9-4e90-8fe9-7b57686b281c" width="250" height="250" />
+          </div>
+        </div>
+
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200">
+          <div class="highlight-bg-color h-3"></div>
+
+          <div class="p-3">
+            <h2 class="text-md mb-2 font-extrabold">
+              Social Media
+            </h2>
+            <div class="text-sm flex flex-col gap-1">
+              <a href="https://www.linkedin.com/in/nicolai-berg-andersen-ab1279b3/" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">LinkedIn</a>
+
+              <a href="https://github.com/niiicolai" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">GitHub</a>
             </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="w-full flex flex-col gap-3">
 
-            <div class="flex flex-wrap justify-center gap-3 mb-6">
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-blue-400 text-gray-900 shadow-md">
-                Tutorials
-              </span>
-            </div>
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <img src="/examples/learning-platform-example.png" alt="Learning Platform example"
+            class="w-full border-b border-neutral-500" />
 
-            <div class="flex gap-6 w-full justify-center items-center">
+          <div class="p-3 flex flex-col gap-2">
+            <a href="https://learn.bergandersen.com/" target="_blank"
+              class="text-xl block font-extrabold hover:underline">
+              Learning Platform
+            </a>
+            <div class="flex flex-col gap-1 text-sm">
+              <p>
+                A website where I share technical tutorials in both Danish and English. These tutorials combine written
+                material with interactive tasks.
+              </p>
               <a href="https://learn.bergandersen.com/" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
+                class="highlight-color highlight-color-hover hover:underline">
                 Visit Website
               </a>
             </div>
           </div>
         </div>
 
-        <div class="w-full mb-3">
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <iframe
+            src="https://niiicolai.github.io/widget-project-status-dashboard/#/dashboard?data_url=https://raw.githubusercontent.com/niiicolai/niiicolai/refs/heads/main/projects.json"
+            height="370px" width="100%" style="border:none;border-radius: 0.5em;"></iframe>
+        </div>
+
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <a href="https://bergandersen.com/ai" target="_blank"><img src="/examples/ai-example-page.png"
+              alt="AI website example" class="w-full border-b border-neutral-500" /></a>
+
+          <div class="p-3 flex flex-col gap-2">
+            <a href="https://bergandersen.com/ai" target="_blank" class="text-xl block font-extrabold hover:underline">
+              AI Projects
+            </a>
+            <div class="flex flex-col gap-1 text-sm">
+              <p>
+                Showcasing projects built with artificial intelligence tools, such as OpenCode.
+              </p>
+              <a href="https://bergandersen.com/ai" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline">
+                Visit Website
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
           <iframe src="https://niiicolai.github.io/widget-github-user-tracker/#/widget?github_username=niiicolai"
-            height="440px" width="100%" style="border:none;border-radius: 0.5em;"></iframe>
+            height="555px" width="100%" style="border:none;border-radius: 0.5em;"></iframe>
         </div>
 
-        <div class="min-h-screen w-full px-10 py-20 flex flex-col items-center justify-center 
-            bg-gray-900 rounded-md border highlight-border-color">
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <img src="/examples/c7pixel.png" alt="C7pixel example" class="w-full border-b border-neutral-500" />
 
-          <div class="w-full">
-
-            <h1 class="text-4xl font-extrabold mb-6 leading-tight max-w-3xl mx-auto ">
+          <div class="p-3 flex flex-col gap-2">
+            <a href="https://c7pixel.com/" target="_blank" class="text-xl block font-extrabold hover:underline">
+              C7Pixel
+            </a>
+            <div class="flex flex-col gap-1 text-sm">
+              <p>
+                A website I use for showcasing games.
+              </p>
               <a href="https://c7pixel.com/" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                C7Pixel
-              </a>
-            </h1>
-
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto 
-                  text-gray-300 lg:text-justify">
-              A website I use for showcasing games.
-            </p>
-
-            <div class="mb-10 w-full flex justify-center">
-              <img src="/examples/c7pixel.png" alt="c7pixel example"
-                class="w-full max-w-3xl rounded-xl shadow-2xl border-4 highlight-border-color" />
-            </div>
-
-
-            <div class="flex flex-wrap justify-center gap-3 mb-6">
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-blue-400 text-gray-900 shadow-md">
-                Ruby on Rails
-              </span>
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-blue-400 text-gray-900 shadow-md">
-                Unity Games
-              </span>
-            </div>
-
-            <div class="flex gap-6 w-full justify-center items-center">
-              <a href="https://c7pixel.com/" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
+                class="highlight-color highlight-color-hover hover:underline">
                 Visit Website
               </a>
             </div>
           </div>
         </div>
 
-        <div class="min-h-screen w-full px-10 py-20 flex flex-col items-center justify-center 
-            rounded-md border highlight-border-color">
-
-          <div class="w-full">
-
-            <h1 class="text-4xl font-extrabold mb-6 leading-tight max-w-3xl mx-auto ">
-              <a href="https://bergandersen.com/ai" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                Projects built with artificial intelligence.
-              </a>
-            </h1>
-
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto 
-                  text-gray-300 lg:text-justify">
-              Showcasing projects built with artificial intelligence tools, such as OpenCode.
-            </p>
-
-            <div class="mb-10 w-full flex justify-center">
-              <img src="/examples/ai-example-page.png" alt="Learning Platform example"
-                class="w-full max-w-3xl rounded-xl shadow-2xl border-4 highlight-border-color" />
-            </div>
-
-
-            <div class="flex flex-wrap justify-center gap-3 mb-6">
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-blue-400 text-gray-900 shadow-md">
-                LLM
-              </span>
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-blue-400 text-gray-900 shadow-md">
-                Agentic AI
-              </span>
-            </div>
-
-            <div class="flex gap-6 w-full justify-center items-center">
-              <a href="https://bergandersen.com/ai" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                Visit Website
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="w-full mb-3">
-          <iframe src="https://niiicolai.github.io/widget-ping-pong-game/#/ping-pong" height="600px" width="100%"
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <iframe src="https://niiicolai.github.io/widget-ping-pong-game/#/ping-pong" height="510px" width="100%"
             frameborder="0" scrolling="no" style="border:none;border-radius: 0.5em;">
           </iframe>
         </div>
 
-        <div class="min-h-screen w-full px-10 py-20 flex flex-col items-center justify-center 
-            rounded-md border highlight-border-color">
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <img src="/examples/two-easy-engine.png" alt="TwoEasyEngine example"
+            class="w-full border-b border-neutral-500" />
 
-          <div class="w-full">
-
-            <h1 class="text-4xl font-extrabold mb-6 leading-tight max-w-3xl mx-auto ">
+          <div class="p-3 flex flex-col gap-2">
+            <a href="https://www.bergandersen.com/two-easy-engine/" target="_blank"
+              class="text-xl block font-extrabold hover:underline">
+              TwoEasyEngine
+            </a>
+            <div class="flex flex-col gap-1 text-sm">
+              <p>
+                TwoEasyEngine is a lightweight 2D rendering library built on HTML5 Canvas. It provides a clean,
+                object-oriented API for creating interactive scenes, managing meshes, controlling cameras, and animating
+                objects, with minimal setup.
+              </p>
               <a href="https://www.bergandersen.com/two-easy-engine/" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                TwoEasyEngine
-              </a>
-            </h1>
-
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto 
-                  text-gray-300 lg:text-justify">
-              TwoEasyEngine is a lightweight 2D rendering library built on HTML5 Canvas. It provides a clean,
-              object-oriented API for creating interactive scenes, managing meshes, controlling cameras, and animating
-              objects, with minimal setup.
-            </p>
-
-            <div class="mb-10 w-full flex justify-center">
-              <img src="/examples/two-easy-engine.png" alt="TwoEasyEngine example"
-                class="w-full max-w-3xl rounded-xl shadow-2xl border-4 highlight-border-color" />
-            </div>
-
-
-            <div class="flex flex-wrap justify-center gap-3 mb-6">
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-blue-400 text-gray-900 shadow-md">
-                JavaScript
-              </span>
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-gray-700 text-gray-200">
-                2D Canvas Library
-              </span>
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-gray-700 text-gray-200">
-                NPM Package
-              </span>
-            </div>
-
-            <div class="flex gap-6 w-full justify-center items-center">
-              <a href="https://github.com/niiicolai/two-easy-engine" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                GitHub Repository
-              </a>
-
-              <a href="https://www.bergandersen.com/two-easy-engine/" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                Visit Official Documentation
+                class="highlight-color highlight-color-hover hover:underline">
+                Visit Website
               </a>
             </div>
           </div>
         </div>
 
-        <div class="w-full mb-3">
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
           <iframe
             src="https://niiicolai.github.io/widget-github-repo-tracker/#/dashboard?github_username=niiicolai&repository_name=two-easy-engine"
-            height="414px" width="100%" style="border:none;border-radius: 0.5em;"></iframe>
+            height="537px" width="100%" style="border:none;border-radius: 0.5em;"></iframe>
         </div>
 
-        <div class="w-full px-10 py-20 flex flex-col items-center justify-center 
-            bg-gray-900 text-center rounded-md border highlight-border-color">
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <img src="/examples/interactive-3d-site.png" alt="Interactive 3D Site example"
+            class="w-full border-b border-neutral-500" />
 
-          <div class="w-full">
-
-            <h1 class="text-4xl font-extrabold mb-6 
-                    leading-tight text-left max-w-3xl mx-auto">
-              <router-link to="/os"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                Interactive 3D Site
-              </router-link>
-            </h1>
-
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-300 text-left lg:text-justify">
-              An interactive 3D environment built with Three.js, simulating a desktop setup where users can explore a
-              rendered computer and interact with a full 2D overlay. Features include a fake browser, a light
-              customization program, a painting tool, and an integrated Snake game.
-            </p>
-
-            <div class="mb-10 w-full flex justify-center">
-              <img src="/examples/interactive-3d-site.png" alt="Interactive 3D Site example"
-                class="w-full max-w-3xl rounded-xl shadow-2xl border-4 highlight-border-color" />
-            </div>
-
-
-            <div class="flex flex-wrap justify-center gap-3 mb-6">
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-blue-400 text-gray-900 shadow-md">
-                JavaScript
-              </span>
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-gray-700 text-gray-200">
-                Three.js
-              </span>
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-gray-700 text-gray-200">
-                Vue.js
-              </span>
-            </div>
-
-            <router-link to="/os"
-              class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-              Visit Demo
+          <div class="p-3 flex flex-col gap-2">
+            <router-link to="/os" class="text-xl block font-extrabold hover:underline">
+              Interactive 3D Site
             </router-link>
-
+            <div class="flex flex-col gap-1 text-sm">
+              <p>
+                An interactive 3D environment built with Three.js, simulating a desktop setup where users can explore a
+                rendered computer and interact with a full 2D overlay. Features include a fake browser, a light
+                customization program, a painting tool, and an integrated Snake game.
+              </p>
+              <router-link to="/os" class="highlight-color highlight-color-hover hover:underline">
+                Visit Website
+              </router-link>
+            </div>
           </div>
         </div>
 
-        <div class="w-full mb-3">
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
           <iframe src="https://niiicolai.github.io/widget-snake-game/#/snake" height="810px" width="100%"
             frameborder="0" scrolling="no" style="border:none;border-radius: 0.5em;">
           </iframe>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
-          <div class="w-full p-10 py-20 flex flex-col items-center justify-center 
-            text-center rounded-md border highlight-border-color">
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <img src="/examples/coding-challenges.png" alt="Coding Challenges example"
+            class="w-full border-b border-neutral-500" />
 
-            <div class="w-full">
-
-              <h1 class="text-4xl font-extrabold mb-6 
-                    leading-tight">
-                <a href="https://coding-challenges.bergandersen.com/" target="_blank"
-                  class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                  Coding Challenges
-                </a>
-              </h1>
-
-              <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-300">
+          <div class="p-3 flex flex-col gap-2">
+            <a href="https://coding-challenges.bergandersen.com/" target="_blank"
+              class="text-xl block font-extrabold hover:underline">
+              Coding Challenges
+            </a>
+            <div class="flex flex-col gap-1 text-sm">
+              <p>
                 A prototype featuring a collection of structured logical challenges focused on improving foundational
                 coding and algorithmic thinking skills.
               </p>
-
-              <div class="mb-10 w-full flex justify-center">
-                <img src="/examples/coding-challenges.png" alt="Coding Challenges example"
-                  class="w-full max-w-3xl rounded-xl shadow-2xl border-4 highlight-border-color" />
-              </div>
-
-
-              <div class="flex flex-wrap justify-center gap-3 mb-6">
-                <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-blue-400 text-gray-900 shadow-md">
-                  TypeScript
-                </span>
-                <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-gray-700 text-gray-200">
-                  Prototyping
-                </span>
-                <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-gray-700 text-gray-200">
-                  React.js
-                </span>
-              </div>
-
-
-              <div class="flex gap-6 w-full justify-center items-center">
-                <a href="https://github.com/niiicolai/coding-challenges" target="_blank"
-                  class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                  GitHub Repository
-                </a>
-
-                <a href="https://coding-challenges.bergandersen.com/" target="_blank"
-                  class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                  Visit Demo
-                </a>
-              </div>
-
+              <a href="https://coding-challenges.bergandersen.com/" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline">
+                Visit Website
+              </a>
             </div>
           </div>
+        </div>
 
-          <div class="w-full p-10 py-20 flex flex-col items-center justify-center 
-            text-center rounded-md border highlight-border-color">
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <img src="/examples/vector-math-animation.png" alt="Vector Fundamentals example"
+            class="w-full border-b border-neutral-500" />
 
-            <div class="w-full">
-
-              <h1 class="text-4xl font-extrabold mb-6 
-                   leading-tight">
-                <a href="https://www.bergandersen.com/vector-math-animation/" target="_blank"
-                  class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                  Vector Fundamentals
-                </a>
-              </h1>
-
-              <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto 
-                  text-gray-300">
+          <div class="p-3 flex flex-col gap-2">
+            <a href="https://www.bergandersen.com/vector-math-animation/" target="_blank"
+              class="text-xl block font-extrabold hover:underline">
+              Vector Fundamentals
+            </a>
+            <div class="flex flex-col gap-1 text-sm">
+              <p>
                 A small 2D animated demonstration of vector mathematics concepts, implemented using TwoEasyEngine and
                 integrated into a React front-end.
               </p>
-
-              <div class="mb-10 w-full flex justify-center">
-                <img src="/examples/vector-math-animation.png" alt="Coding Challenges example"
-                  class="w-full max-w-3xl rounded-xl shadow-2xl border-4 highlight-border-color" />
-              </div>
-
-
-              <div class="flex flex-wrap justify-center gap-3 mb-6">
-                <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-blue-400 text-gray-900 shadow-md">
-                  TypeScript
-                </span>
-                <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-gray-700 text-gray-200">
-                  Math
-                </span>
-                <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-gray-700 text-gray-200">
-                  React
-                </span>
-              </div>
-
-              <div class="flex gap-6 w-full justify-center items-center">
-                <a href="https://github.com/niiicolai/vector-math-animation" target="_blank"
-                  class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                  GitHub Repository
-                </a>
-
-                <a href="https://www.bergandersen.com/vector-math-animation/" target="_blank"
-                  class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                  Visit Demo
-                </a>
-              </div>
-
+              <a href="https://www.bergandersen.com/vector-math-animation/" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline">
+                Visit Website
+              </a>
             </div>
           </div>
         </div>
 
-        <div class="w-full px-10 py-20 flex flex-col items-center justify-center 
-            bg-gray-900 text-center rounded-md border highlight-border-color">
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <img src="/examples/widget-project-status-dashboard.png" alt="Project Status Dashboard example"
+            class="w-full border-b border-neutral-500" />
 
-          <div class="w-full">
-
-            <h1 class="text-4xl text-left font-extrabold mb-6 leading-tight max-w-3xl mx-auto">
+          <div class="p-3 flex flex-col gap-2">
+            <a href="https://niiicolai.github.io/widget-project-status-dashboard" target="_blank"
+              class="text-xl block font-extrabold hover:underline">
+              Project Status Dashboard
+            </a>
+            <div class="flex flex-col gap-1 text-sm">
+              <p>
+                An oldschool iframe widget component that initializes a project status dashboard by making a single,
+                on-load fetch request to a specified external JSON data source.
+              </p>
               <a href="https://niiicolai.github.io/widget-project-status-dashboard" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                Project Status Dashboard
-              </a>
-            </h1>
-
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto 
-                  text-gray-300 lg:text-justify">
-              An oldschool iframe widget component that initializes a project status dashboard by making a single,
-              on-load fetch request to a specified external JSON data source.
-            </p>
-
-            <div class="mb-10 w-full flex justify-center">
-              <img src="/examples/widget-project-status-dashboard.png" alt="Project Status Dashboard example"
-                class="w-full max-w-3xl rounded-xl shadow-2xl border-4 highlight-border-color" />
-            </div>
-
-
-            <div class="flex flex-wrap justify-center gap-3 mb-6">
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-blue-400 text-gray-900 shadow-md">
-                JavaScript
-              </span>
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-gray-700 text-gray-200">
-                Iframe Widget
-              </span>
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-gray-700 text-gray-200">
-                React.js
-              </span>
-            </div>
-
-            <div class="flex gap-6 w-full justify-center items-center">
-              <a href="https://github.com/niiicolai/widget-project-status-dashboard" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                GitHub Repository
-              </a>
-
-              <a href="https://niiicolai.github.io/widget-project-status-dashboard" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                Visit Demo
+                class="highlight-color highlight-color-hover hover:underline">
+                Visit Website
               </a>
             </div>
-
-
-
           </div>
         </div>
 
-        <div class="w-full px-10 py-20 flex flex-col items-center justify-center 
-            text-center rounded-md border highlight-border-color">
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <img src="/examples/github-repo-tracker.png" alt="GitHub Repository Tracker example"
+            class="w-full border-b border-neutral-500" />
 
-          <div class="w-full">
-
-            <h1 class="text-4xl text-left font-extrabold mb-6 leading-tight max-w-3xl mx-auto">
+          <div class="p-3 flex flex-col gap-2">
+            <a href="https://niiicolai.github.io/widget-github-repo-tracker" target="_blank"
+              class="text-xl block font-extrabold hover:underline">
+              GitHub Repository Tracker
+            </a>
+            <div class="flex flex-col gap-1 text-sm">
+              <p>
+                An embeddable iframe widget designed to provide a real-time snapshot of a GitHub repository's stats.
+              </p>
               <a href="https://niiicolai.github.io/widget-github-repo-tracker" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                GitHub Repository Tracker
-              </a>
-            </h1>
-
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto 
-                  text-gray-300 lg:text-justify">
-              An embeddable iframe widget designed to provide a real-time snapshot of a GitHub repository's stats.
-            </p>
-
-            <div class="mb-10 w-full flex justify-center">
-              <img src="/examples/github-repo-tracker.png" alt="Project Status Dashboard example"
-                class="w-full max-w-3xl rounded-xl shadow-2xl border-4 highlight-border-color" />
-            </div>
-
-
-            <div class="flex flex-wrap justify-center gap-3 mb-6">
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-blue-400 text-gray-900 shadow-md">
-                JavaScript
-              </span>
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-gray-700 text-gray-200">
-                Iframe Widget
-              </span>
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-gray-700 text-gray-200">
-                React.js
-              </span>
-            </div>
-
-            <div class="flex gap-6 w-full justify-center items-center">
-              <a href="https://github.com/niiicolai/widget-github-repo-tracker" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                GitHub Repository
-              </a>
-
-              <a href="https://niiicolai.github.io/widget-github-repo-tracker" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                Visit Demo
+                class="highlight-color highlight-color-hover hover:underline">
+                Visit Website
               </a>
             </div>
-
-
-
           </div>
         </div>
 
-        <div class="w-full px-10 py-20 flex flex-col items-center justify-center 
-            bg-gray-900 text-center rounded-md border highlight-border-color">
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <img src="/examples/github-user-tracker.png" alt="GitHub User Tracker example"
+            class="w-full border-b border-neutral-500" />
 
-          <div class="w-full">
-
-            <h1 class="text-4xl text-left font-extrabold mb-6 leading-tight max-w-3xl mx-auto">
+          <div class="p-3 flex flex-col gap-2">
+            <a href="https://niiicolai.github.io/widget-github-user-tracker" target="_blank"
+              class="text-xl block font-extrabold hover:underline">
+              GitHub User Tracker
+            </a>
+            <div class="flex flex-col gap-1 text-sm">
+              <p>
+                An embeddable iframe widget designed to provide a real-time snapshot of a GitHub user's stats.
+              </p>
               <a href="https://niiicolai.github.io/widget-github-user-tracker" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                GitHub User Tracker
-              </a>
-            </h1>
-
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto 
-                  text-gray-300 lg:text-justify">
-              An embeddable iframe widget designed to provide a real-time snapshot of a GitHub user's stats.
-            </p>
-
-            <div class="mb-10 w-full flex justify-center">
-              <img src="/examples/github-user-tracker.png" alt="Github user tracker example"
-                class="w-full max-w-3xl rounded-xl shadow-2xl border-4 highlight-border-color" />
-            </div>
-
-
-            <div class="flex flex-wrap justify-center gap-3 mb-6">
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-blue-400 text-gray-900 shadow-md">
-                JavaScript
-              </span>
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-gray-700 text-gray-200">
-                Iframe Widget
-              </span>
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-gray-700 text-gray-200">
-                React.js
-              </span>
-            </div>
-
-            <div class="flex gap-6 w-full justify-center items-center">
-              <a href="https://github.com/niiicolai/widget-github-user-tracker" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                GitHub Repository
-              </a>
-
-              <a href="https://niiicolai.github.io/widget-github-user-tracker" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                Visit Demo
+                class="highlight-color highlight-color-hover hover:underline">
+                Visit Website
               </a>
             </div>
-
-
-
           </div>
         </div>
 
-        <div class="w-full px-10 py-20 flex flex-col items-center justify-center 
-            text-center rounded-md border highlight-border-color">
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <img src="/examples/ping-pong-game-widget.png" alt="Ping-Pong Game Widget example"
+            class="w-full border-b border-neutral-500" />
 
-          <div class="w-full">
-
-            <h1 class="text-4xl text-left font-extrabold mb-6 leading-tight max-w-3xl mx-auto">
+          <div class="p-3 flex flex-col gap-2">
+            <a href="https://niiicolai.github.io/widget-ping-pong-game" target="_blank"
+              class="text-xl block font-extrabold hover:underline">
+              Ping-Pong Game Widget
+            </a>
+            <div class="flex flex-col gap-1 text-sm">
+              <p>
+                An embeddable iframe widget with an interactive ping-pong game.
+              </p>
               <a href="https://niiicolai.github.io/widget-ping-pong-game" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                Ping-Pong Game Widget
-              </a>
-            </h1>
-
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto 
-                  text-gray-300 lg:text-justify">
-              An embeddable iframe widget with an interactive ping-pong game.
-            </p>
-
-            <div class="mb-10 w-full flex justify-center">
-              <img src="/examples/ping-pong-game-widget.png" alt="Github user tracker example"
-                class="w-full max-w-3xl rounded-xl shadow-2xl border-4 highlight-border-color" />
-            </div>
-
-            <div class="flex flex-wrap justify-center gap-3 mb-6">
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-blue-400 text-gray-900 shadow-md">
-                JavaScript
-              </span>
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-gray-700 text-gray-200">
-                Iframe Widget
-              </span>
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-gray-700 text-gray-200">
-                React.js
-              </span>
-            </div>
-
-            <div class="flex gap-6 w-full justify-center items-center">
-              <a href="https://github.com/niiicolai/widget-ping-pong-game" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                GitHub Repository
-              </a>
-
-              <a href="https://niiicolai.github.io/widget-ping-pong-game" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                Visit Demo
+                class="highlight-color highlight-color-hover hover:underline">
+                Visit Website
               </a>
             </div>
-
-
-
           </div>
         </div>
 
-        <div class="w-full px-10 py-20 flex flex-col items-center justify-center 
-           bg-gray-900 text-center rounded-md border highlight-border-color">
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <img src="/examples/snake-game-widget.png" alt="Snake Game Widget example"
+            class="w-full border-b border-neutral-500" />
 
-          <div class="w-full">
-
-            <h1 class="text-4xl text-left font-extrabold mb-6 leading-tight max-w-3xl mx-auto">
+          <div class="p-3 flex flex-col gap-2">
+            <a href="https://niiicolai.github.io/widget-snake-game" target="_blank"
+              class="text-xl block font-extrabold hover:underline">
+              Snake Game Widget
+            </a>
+            <div class="flex flex-col gap-1 text-sm">
+              <p>
+                An embeddable iframe widget with an interactive snake game.
+              </p>
               <a href="https://niiicolai.github.io/widget-snake-game" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                Snake Game Widget
+                class="highlight-color highlight-color-hover hover:underline">
+                Visit Website
               </a>
-            </h1>
-
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto 
-                  text-gray-300 lg:text-justify">
-              An embeddable iframe widget with an interactive snake game.
-            </p>
-
-            <div class="mb-10 w-full flex justify-center">
-              <img src="/examples/snake-game-widget.png" alt="Github user tracker example"
-                class="w-full max-w-3xl rounded-xl shadow-2xl border-4 highlight-border-color" />
-            </div>
-
-            <div class="flex flex-wrap justify-center gap-3 mb-6">
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-blue-400 text-gray-900 shadow-md">
-                JavaScript
-              </span>
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-gray-700 text-gray-200">
-                Iframe Widget
-              </span>
-              <span class="text-sm font-semibold px-4 py-2 rounded-full 
-                     bg-gray-700 text-gray-200">
-                React.js
-              </span>
-            </div>
-
-            <div class="flex gap-6 w-full justify-center items-center">
-              <a href="https://github.com/niiicolai/widget-snake-game" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                GitHub Repository
-              </a>
-
-              <a href="https://niiicolai.github.io/widget-snake-game" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">
-                Visit Demo
-              </a>
-            </div>
-
-
-
-          </div>
-        </div>
-
-        <div class="w-full px-10 py-20 flex flex-col items-center justify-center 
-           bg-gray-900 text-center rounded-md border highlight-border-color">
-
-          <div class="w-full">
-
-            <h1 class="text-4xl highlight-color text-left font-extrabold mb-6 leading-tight max-w-3xl mx-auto">
-              Certifications
-            </h1>
-
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto 
-                  text-gray-300 lg:text-justify">
-              Find the Credly badges I've earned below.
-            </p>
-
-            <div class="mb-10 w-full flex justify-center">
-              <CredlyBadge badge-id="e74f1a47-2fa9-4e90-8fe9-7b57686b281c" width="350" height="450" />
             </div>
           </div>
         </div>
 
-
-
-        <footer class="py-5 w-full text-center rounded-md highlight-color border highlight-border-color">
-          bergandersen.com | 2025 - 2026
+        <footer class="py-3 w-full text-center rounded-md bg-neutral-900 border border-neutral-500 text-neutral-200">
+          bergandersen.com © 2025 - 2026
         </footer>
       </div>
     </div>
+
   </div>
 </template>
 
