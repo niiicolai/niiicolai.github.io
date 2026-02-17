@@ -56,6 +56,7 @@ onMounted(() => {
 
             <CredlyBadge badge-id="e74f1a47-2fa9-4e90-8fe9-7b57686b281c" width="250" height="250" />
             <CredlyBadge badge-id="7a71ead5-0c1f-41a2-99be-f17d8ed4f27d" width="250" height="250" />
+            <CredlyBadge badge-id="c7e5a093-683a-4182-b1af-6079753f0336" width="250" height="250" />
           </div>
         </div>
 
