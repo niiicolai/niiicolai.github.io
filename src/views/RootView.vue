@@ -106,6 +106,29 @@ onMounted(() => {
         </div>
 
         <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <img src="/examples/documentation-agent.png" alt="Learning Platform example"
+            class="w-full border-b border-neutral-500" />
+
+          <div class="p-3 flex flex-col gap-2">
+            <a href="https://github.com/niiicolai/documentation-agent" target="_blank"
+              class="text-xl block font-extrabold hover:underline">
+              Documentation Agent
+            </a>
+            <div class="flex flex-col gap-1 text-sm">
+              <p>
+                Documentation Agent is a desktop application that harnesses local AI through Ollama and agentic workflows powered by LangChain to 
+                analyze your documents and automatically generate professional documentation. All processing happens locally on your machine with your own LLM model, 
+                so there's no cloud dependency or API costs.
+              </p>
+              <a href="https://github.com/niiicolai/documentation-agent" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline">
+                Visit GitHub Repository
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
           <iframe
             src="https://niiicolai.github.io/widget-project-status-dashboard/#/dashboard?data_url=https://raw.githubusercontent.com/niiicolai/niiicolai/refs/heads/main/projects.json"
             height="370px" width="100%" style="border:none;border-radius: 0.5em;"></iframe>
