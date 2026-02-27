@@ -41,6 +41,9 @@ onMounted(() => {
             <p class="text-sm">
               Welcome to my corner of the web! I share development projects, AI-powered tools, and automation experiments I’m passionate about. Not everything here is production-ready, you’ll find both beginner and advanced articles, lots of prototypes, and some more serious projects.
             </p>
+            <p class="text-sm">
+              I enjoy building everything from full-scale 3D applications and websites to automation tools.
+            </p>
           </div>
         </div>
 
@@ -739,6 +742,9 @@ onMounted(() => {
 
               <a href="https://github.com/niiicolai" target="_blank"
                 class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">GitHub</a>
+
+              <a href="https://builtin.com/authors/nicolai-andersen" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">Built In</a>
             </div>
           </div>
         </div>
@@ -1010,6 +1016,114 @@ onMounted(() => {
                 A guide to create and manage MySQL servers using Docker and GitHub Actions.
               </p>
               <a href="https://medium.com/better-programming/how-to-deploy-and-automate-mysql-server-on-ubuntu-using-docker-and-github-actions-b7cda5075eaf"
+                target="_blank" class="highlight-color highlight-color-hover hover:underline">
+                Visit Article
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <div class="p-3 flex flex-col gap-2">
+            <a href="https://builtin.com/software-engineering-perspectives/iframe"
+              target="_blank" class="text-xl block font-extrabold hover:underline">
+              What Is an iFrame?
+            </a>
+            <div class="flex flex-col gap-1 text-sm">
+              <p>
+                Learn about the HTML iFrame element.
+              </p>
+              <a href="https://builtin.com/software-engineering-perspectives/iframe"
+                target="_blank" class="highlight-color highlight-color-hover hover:underline">
+                Visit Article
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <div class="p-3 flex flex-col gap-2">
+            <a href="https://builtin.com/software-engineering-perspectives/waterfall-methodology"
+              target="_blank" class="text-xl block font-extrabold hover:underline">
+              What Is the Waterfall Methodology?
+            </a>
+            <div class="flex flex-col gap-1 text-sm">
+              <p>
+                Learn about the Waterfall Methodology.
+              </p>
+              <a href="https://builtin.com/software-engineering-perspectives/waterfall-methodology"
+                target="_blank" class="highlight-color highlight-color-hover hover:underline">
+                Visit Article
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <div class="p-3 flex flex-col gap-2">
+            <a href="https://builtin.com/software-engineering-perspectives/json"
+              target="_blank" class="text-xl block font-extrabold hover:underline">
+              What Is JSON?
+            </a>
+            <div class="flex flex-col gap-1 text-sm">
+              <p>
+                Learn more about JSON.
+              </p>
+              <a href="https://builtin.com/software-engineering-perspectives/json"
+                target="_blank" class="highlight-color highlight-color-hover hover:underline">
+                Visit Article
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <div class="p-3 flex flex-col gap-2">
+            <a href="https://builtin.com/data-science/pandas"
+              target="_blank" class="text-xl block font-extrabold hover:underline">
+              What Is Pandas?
+            </a>
+            <div class="flex flex-col gap-1 text-sm">
+              <p>
+                Get started with Pandas.
+              </p>
+              <a href="https://builtin.com/data-science/pandas"
+                target="_blank" class="highlight-color highlight-color-hover hover:underline">
+                Visit Article
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <div class="p-3 flex flex-col gap-2">
+            <a href="https://builtin.com/software-engineering-perspectives/ruby-on-rails"
+              target="_blank" class="text-xl block font-extrabold hover:underline">
+              What Is Ruby on Rails?
+            </a>
+            <div class="flex flex-col gap-1 text-sm">
+              <p>
+                Learn more about Ruby on Rails.
+              </p>
+              <a href="https://builtin.com/software-engineering-perspectives/ruby-on-rails"
+                target="_blank" class="highlight-color highlight-color-hover hover:underline">
+                Visit Article
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <div class="p-3 flex flex-col gap-2">
+            <a href="https://builtin.com/software-engineering-perspectives/ruby-on-rails"
+              target="_blank" class="text-xl block font-extrabold hover:underline">
+              What Is Ruby on Rails?
+            </a>
+            <div class="flex flex-col gap-1 text-sm">
+              <p>
+                Learn more about Ruby on Rails.
+              </p>
+              <a href="https://builtin.com/software-engineering-perspectives/ruby-on-rails"
                 target="_blank" class="highlight-color highlight-color-hover hover:underline">
                 Visit Article
               </a>
