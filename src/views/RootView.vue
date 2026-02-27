@@ -106,7 +106,28 @@ onMounted(() => {
         </div>
 
         <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
-          <img src="/examples/documentation-agent.png" alt="Learning Platform example"
+          <img src="/examples/review-agent-example.png" alt="Review agent example"
+            class="w-full border-b border-neutral-500" />
+
+          <div class="p-3 flex flex-col gap-2">
+            <a href="https://github.com/niiicolai/review-agent" target="_blank"
+              class="text-xl block font-extrabold hover:underline">
+              GitHub Review Agent
+            </a>
+            <div class="flex flex-col gap-1 text-sm">
+              <p>
+                AI-powered GitHub Pull Request reviewer and comment responder bot.
+              </p>
+              <a href="https://github.com/niiicolai/review-agent" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline">
+                Visit GitHub Repository
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <img src="/examples/documentation-agent.png" alt="Documentation agent example"
             class="w-full border-b border-neutral-500" />
 
           <div class="p-3 flex flex-col gap-2">
