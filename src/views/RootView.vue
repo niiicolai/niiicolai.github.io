@@ -453,7 +453,7 @@ onMounted(() => {
           </div>
         </div>
 
-        <div class="grid grid-cols-2 gap-3">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
           <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
             <img src="/examples/review-agent-example.png" alt="Review agent example"
               class="w-full border-b border-neutral-500 h-64" />
