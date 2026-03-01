@@ -38,7 +38,7 @@ onMounted(() => {
             <h2 class="text-md mb-2 font-extrabold">
               Nicolai Berg Andersen
             </h2>
-            <p class="text-sm">
+            <p class="text-sm mb-2">
               Welcome to my corner of the web! I share development projects, AI-powered tools, and automation experiments I’m passionate about. Not everything here is production-ready, you’ll find both beginner and advanced articles, lots of prototypes, and some more serious projects.
             </p>
             <p class="text-sm">
@@ -737,9 +737,6 @@ onMounted(() => {
               Social Media
             </h2>
             <div class="text-sm flex flex-col gap-1">
-              <a href="https://www.linkedin.com/in/nicolai-berg-andersen-ab1279b3/" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">LinkedIn</a>
-
               <a href="https://github.com/niiicolai" target="_blank"
                 class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">GitHub</a>
 
