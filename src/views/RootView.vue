@@ -437,16 +437,16 @@ onMounted(() => {
 
           <div class="p-3 flex flex-col justify-between gap-2">
             <div class="flex flex-col gap-1">
-              <a href="https://www.bergandersen.com/review-agent/" target="_blank"
+              <a href="https://www.bergandersen.com/copr-agent/" target="_blank"
                 class="text-xl block font-extrabold hover:underline">
-                GitHub Review Agent
+                CoPR Agent
               </a>
               <p class="text-sm">
-                Review Agent is an AI-powered code review assistant that automatically reviews pull requests and replies to comments using LLMs.
+                CoPR Agent is an AI-powered code review assistant for GitHub that automatically reviews pull requests and replies to comments using LLMs. The agent support local models, multiple repositories, short-term memory, MCP tools, and a RAG tool.
               </p>
             </div>
 
-            <a href="https://www.bergandersen.com/review-agent/" target="_blank"
+            <a href="https://www.bergandersen.com/copr-agent/" target="_blank"
               class="highlight-color highlight-color-hover hover:underline">
               Visit Website
             </a>
