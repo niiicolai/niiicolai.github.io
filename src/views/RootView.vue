@@ -39,7 +39,9 @@ onMounted(() => {
               Nicolai Berg Andersen
             </h2>
             <p class="text-sm mb-2">
-              Welcome to my corner of the web! I share development projects, AI-powered tools, and automation experiments I’m passionate about. Not everything here is production-ready, you’ll find both beginner and advanced articles, lots of prototypes, and some more serious projects.
+              Welcome to my corner of the web! I share development projects, AI-powered tools, and automation
+              experiments I’m passionate about. Not everything here is production-ready, you’ll find both beginner and
+              advanced articles, lots of prototypes, and some more serious projects.
             </p>
             <p class="text-sm">
               I enjoy building everything from full-scale 3D applications and websites to automation tools.
@@ -123,7 +125,8 @@ onMounted(() => {
             </a>
             <div class="flex flex-col gap-1 text-sm">
               <p>
-                This project includes seven backend services that manage authentication, payments, LLM communication, email delivery, vector embedding generation, and RAG (Retrieval-Augmented Generation) evaluation.
+                This project includes seven backend services that manage authentication, payments, LLM communication,
+                email delivery, vector embedding generation, and RAG (Retrieval-Augmented Generation) evaluation.
               </p>
               <a href="https://github.com/niiicolai/ai-editor" target="_blank"
                 class="highlight-color highlight-color-hover hover:underline">
@@ -144,7 +147,8 @@ onMounted(() => {
             </a>
             <div class="flex flex-col gap-1 text-sm">
               <p>
-                A Node.js Chat App implementing a relational, document, and graph database to learn about data modeling, relationships, and efficient querying across different database types.
+                A Node.js Chat App implementing a relational, document, and graph database to learn about data modeling,
+                relationships, and efficient querying across different database types.
               </p>
               <a href="https://github.com/niiicolai/chat-app" target="_blank"
                 class="highlight-color highlight-color-hover hover:underline">
@@ -155,8 +159,7 @@ onMounted(() => {
         </div>
 
         <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
-          <img src="/examples/vr-webshop.png" alt="VR Webshop example"
-            class="w-full border-b border-neutral-500" />
+          <img src="/examples/vr-webshop.png" alt="VR Webshop example" class="w-full border-b border-neutral-500" />
 
           <div class="p-3 flex flex-col gap-2">
             <a href="https://www.youtube.com/watch?v=gZ16FViAOOE" target="_blank"
@@ -222,8 +225,7 @@ onMounted(() => {
             class="w-full border-b border-neutral-500" />
 
           <div class="p-3 flex flex-col gap-2">
-            <a href="https://youtu.be/Z1_AM2or9r4" target="_blank"
-              class="text-xl block font-extrabold hover:underline">
+            <a href="https://youtu.be/Z1_AM2or9r4" target="_blank" class="text-xl block font-extrabold hover:underline">
               Robot Invasion Wars
             </a>
             <div class="flex flex-col gap-1 text-sm">
@@ -243,8 +245,7 @@ onMounted(() => {
             class="w-full border-b border-neutral-500" />
 
           <div class="p-3 flex flex-col gap-2">
-            <a href="https://youtu.be/gc0yM8eqkV0" target="_blank"
-              class="text-xl block font-extrabold hover:underline">
+            <a href="https://youtu.be/gc0yM8eqkV0" target="_blank" class="text-xl block font-extrabold hover:underline">
               Europa: The Celestial Quest
             </a>
             <div class="flex flex-col gap-1 text-sm">
@@ -302,8 +303,7 @@ onMounted(() => {
         </div>
 
         <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
-          <img src="/examples/vr-rts-example.png" alt="VR RTS demoexample"
-            class="w-full border-b border-neutral-500" />
+          <img src="/examples/vr-rts-example.png" alt="VR RTS demoexample" class="w-full border-b border-neutral-500" />
 
           <div class="p-3 flex flex-col gap-2">
             <a href="https://www.youtube.com/watch?v=Io5gkox-nzU" target="_blank"
@@ -432,6 +432,53 @@ onMounted(() => {
       <div class="w-full flex flex-col gap-3">
 
         <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <img src="/examples/review-agent-example.png" alt="Review agent example"
+            class="w-full border-b border-neutral-500" />
+
+          <div class="p-3 flex flex-col justify-between gap-2">
+            <div class="flex flex-col gap-1">
+              <a href="https://www.bergandersen.com/review-agent/" target="_blank"
+                class="text-xl block font-extrabold hover:underline">
+                GitHub Review Agent
+              </a>
+              <p class="text-sm">
+                Review Agent is an AI-powered code review assistant that automatically reviews pull requests and replies to comments using LLMs.
+              </p>
+            </div>
+
+            <a href="https://www.bergandersen.com/review-agent/" target="_blank"
+              class="highlight-color highlight-color-hover hover:underline">
+              Visit Website
+            </a>
+          </div>
+        </div>
+
+        
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
+          <img src="/examples/documentation-agent.png" alt="Documentation agent example"
+            class="w-full border-b border-neutral-500" />
+
+          <div class="p-3 flex flex-col justify-between gap-2">
+            <div class="flex flex-col gap-1">
+              <a href="https://github.com/niiicolai/documentation-agent" target="_blank"
+                class="text-xl block font-extrabold hover:underline">
+                Documentation Agent
+              </a>
+              <p class="text-sm">
+                A desktop application that implements local AI through Ollama and agentic
+                workflows powered by LangChain to analyze your documents and automatically generate documentation.
+              </p>
+            </div>
+
+
+            <a href="https://github.com/niiicolai/documentation-agent" target="_blank"
+              class="highlight-color highlight-color-hover hover:underline">
+              Visit GitHub Repository
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
           <img src="/examples/learning-platform-example.png" alt="Learning Platform example"
             class="w-full border-b border-neutral-500" />
 
@@ -448,55 +495,6 @@ onMounted(() => {
               <a href="https://learn.bergandersen.com/" target="_blank"
                 class="highlight-color highlight-color-hover hover:underline">
                 Visit Website
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
-            <img src="/examples/review-agent-example.png" alt="Review agent example"
-              class="w-full border-b border-neutral-500 h-64" />
-
-            <div class="p-3 h-44 flex flex-col justify-between gap-2">
-              <div class="flex flex-col gap-1">
-                <a href="https://github.com/niiicolai/review-agent" target="_blank"
-                  class="text-xl block font-extrabold hover:underline">
-                  GitHub Review Agent
-                </a>
-                <p class="text-sm">
-                  AI-powered GitHub Pull Request reviewer and comment responder bot.
-                </p>
-              </div>
-
-              <a href="https://github.com/niiicolai/review-agent" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline">
-                Visit GitHub Repository
-              </a>
-            </div>
-          </div>
-
-          <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
-            <img src="/examples/documentation-agent.png" alt="Documentation agent example"
-              class="w-full border-b border-neutral-500 h-64" />
-
-
-            <div class="p-3 h-44 flex flex-col justify-between gap-2">
-              <div class="flex flex-col gap-1">
-                <a href="https://github.com/niiicolai/documentation-agent" target="_blank"
-                  class="text-xl block font-extrabold hover:underline">
-                  Documentation Agent
-                </a>
-                <p class="text-sm">
-                  A desktop application that implements local AI through Ollama and agentic
-                  workflows powered by LangChain to analyze your documents and automatically generate documentation.
-                </p>
-              </div>
-
-
-              <a href="https://github.com/niiicolai/documentation-agent" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline">
-                Visit GitHub Repository
               </a>
             </div>
           </div>
@@ -741,7 +739,8 @@ onMounted(() => {
                 class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">GitHub</a>
 
               <a href="https://builtin.com/authors/nicolai-andersen" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">Built In</a>
+                class="highlight-color highlight-color-hover hover:underline transition-colors duration-200">Built
+                In</a>
             </div>
           </div>
         </div>
@@ -857,13 +856,13 @@ onMounted(() => {
             class="w-full border-b border-neutral-500" />
 
           <div class="p-3 flex flex-col gap-2">
-            <a href="https://medium.com/@niiicolai/an-introduction-to-movement-in-2d-games-281ff3b58533"
-              target="_blank" class="text-xl block font-extrabold hover:underline">
+            <a href="https://medium.com/@niiicolai/an-introduction-to-movement-in-2d-games-281ff3b58533" target="_blank"
+              class="text-xl block font-extrabold hover:underline">
               Introduction to movement in 2D games
             </a>
             <div class="flex flex-col gap-1 text-sm">
               <p>
-                 Learn some of the concepts behind moving a 2D object in a game by simple Euclidean vector operations.
+                Learn some of the concepts behind moving a 2D object in a game by simple Euclidean vector operations.
               </p>
               <a href="https://medium.com/@niiicolai/an-introduction-to-movement-in-2d-games-281ff3b58533"
                 target="_blank" class="highlight-color highlight-color-hover hover:underline">
@@ -874,8 +873,7 @@ onMounted(() => {
         </div>
 
         <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
-          <img src="/examples/snake-game.gif" alt="Snake Game example"
-            class="w-full border-b border-neutral-500" />
+          <img src="/examples/snake-game.gif" alt="Snake Game example" class="w-full border-b border-neutral-500" />
 
           <div class="p-3 flex flex-col gap-2">
             <a href="https://medium.com/better-programming/create-the-classic-snake-game-with-processing-and-java-18f9db48fac4"
@@ -884,7 +882,7 @@ onMounted(() => {
             </a>
             <div class="flex flex-col gap-1 text-sm">
               <p>
-                 Learn to implement the classic snake game in Processing.
+                Learn to implement the classic snake game in Processing.
               </p>
               <a href="https://medium.com/better-programming/create-the-classic-snake-game-with-processing-and-java-18f9db48fac4"
                 target="_blank" class="highlight-color highlight-color-hover hover:underline">
@@ -899,16 +897,16 @@ onMounted(() => {
             class="w-full border-b border-neutral-500" />
 
           <div class="p-3 flex flex-col gap-2">
-            <a href="https://medium.com/@niiicolai/digital-image-processing-grayscale-442461769fd2"
-              target="_blank" class="text-xl block font-extrabold hover:underline">
+            <a href="https://medium.com/@niiicolai/digital-image-processing-grayscale-442461769fd2" target="_blank"
+              class="text-xl block font-extrabold hover:underline">
               Digital Image Processing: Grayscale
             </a>
             <div class="flex flex-col gap-1 text-sm">
               <p>
-                 Introduces a method that can be used to grayscale an image.
+                Introduces a method that can be used to grayscale an image.
               </p>
-              <a href="https://medium.com/@niiicolai/digital-image-processing-grayscale-442461769fd2"
-                target="_blank" class="highlight-color highlight-color-hover hover:underline">
+              <a href="https://medium.com/@niiicolai/digital-image-processing-grayscale-442461769fd2" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline">
                 Visit Article
               </a>
             </div>
@@ -926,7 +924,8 @@ onMounted(() => {
             </a>
             <div class="flex flex-col gap-1 text-sm">
               <p>
-                Explain the basics of setting up a Scrapy application and how to implement a spider that can crawl and extract information from news pages.
+                Explain the basics of setting up a Scrapy application and how to implement a spider that can crawl and
+                extract information from news pages.
               </p>
               <a href="https://medium.com/@niiicolai/extract-news-information-using-python-and-scrapy-b523585c95c9"
                 target="_blank" class="highlight-color highlight-color-hover hover:underline">
@@ -962,16 +961,17 @@ onMounted(() => {
             class="w-full border-b border-neutral-500" />
 
           <div class="p-3 flex flex-col gap-2">
-            <a href="https://medium.com/@niiicolai/design-pattern-guard-clause-c050a26dcf35"
-              target="_blank" class="text-xl block font-extrabold hover:underline">
+            <a href="https://medium.com/@niiicolai/design-pattern-guard-clause-c050a26dcf35" target="_blank"
+              class="text-xl block font-extrabold hover:underline">
               Design pattern: Guard clause
             </a>
             <div class="flex flex-col gap-1 text-sm">
               <p>
-                Learn a simple pattern known as the guard clause and it can be used to avoid writing complex nested if-statements
+                Learn a simple pattern known as the guard clause and it can be used to avoid writing complex nested
+                if-statements
               </p>
-              <a href="https://medium.com/@niiicolai/design-pattern-guard-clause-c050a26dcf35"
-                target="_blank" class="highlight-color highlight-color-hover hover:underline">
+              <a href="https://medium.com/@niiicolai/design-pattern-guard-clause-c050a26dcf35" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline">
                 Visit Article
               </a>
             </div>
@@ -983,16 +983,16 @@ onMounted(() => {
             class="w-full border-b border-neutral-500" />
 
           <div class="p-3 flex flex-col gap-2">
-            <a href="https://medium.com/@niiicolai/python-basics-list-comprehension-601fe1e1286d"
-              target="_blank" class="text-xl block font-extrabold hover:underline">
+            <a href="https://medium.com/@niiicolai/python-basics-list-comprehension-601fe1e1286d" target="_blank"
+              class="text-xl block font-extrabold hover:underline">
               Python: List comprehension
             </a>
             <div class="flex flex-col gap-1 text-sm">
               <p>
                 The article looks into the basics of list comprehension and how to use it.
               </p>
-              <a href="https://medium.com/@niiicolai/python-basics-list-comprehension-601fe1e1286d"
-                target="_blank" class="highlight-color highlight-color-hover hover:underline">
+              <a href="https://medium.com/@niiicolai/python-basics-list-comprehension-601fe1e1286d" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline">
                 Visit Article
               </a>
             </div>
@@ -1000,7 +1000,8 @@ onMounted(() => {
         </div>
 
         <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
-          <img src="/examples/mysql-docker-example.png" alt="Deploy and Automate MySQL Server on Ubuntu Using Docker and GitHub Actions example"
+          <img src="/examples/mysql-docker-example.png"
+            alt="Deploy and Automate MySQL Server on Ubuntu Using Docker and GitHub Actions example"
             class="w-full border-b border-neutral-500" />
 
           <div class="p-3 flex flex-col gap-2">
@@ -1022,16 +1023,16 @@ onMounted(() => {
 
         <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
           <div class="p-3 flex flex-col gap-2">
-            <a href="https://builtin.com/software-engineering-perspectives/iframe"
-              target="_blank" class="text-xl block font-extrabold hover:underline">
+            <a href="https://builtin.com/software-engineering-perspectives/iframe" target="_blank"
+              class="text-xl block font-extrabold hover:underline">
               What Is an iFrame?
             </a>
             <div class="flex flex-col gap-1 text-sm">
               <p>
                 Learn about the HTML iFrame element.
               </p>
-              <a href="https://builtin.com/software-engineering-perspectives/iframe"
-                target="_blank" class="highlight-color highlight-color-hover hover:underline">
+              <a href="https://builtin.com/software-engineering-perspectives/iframe" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline">
                 Visit Article
               </a>
             </div>
@@ -1040,16 +1041,16 @@ onMounted(() => {
 
         <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
           <div class="p-3 flex flex-col gap-2">
-            <a href="https://builtin.com/software-engineering-perspectives/waterfall-methodology"
-              target="_blank" class="text-xl block font-extrabold hover:underline">
+            <a href="https://builtin.com/software-engineering-perspectives/waterfall-methodology" target="_blank"
+              class="text-xl block font-extrabold hover:underline">
               What Is the Waterfall Methodology?
             </a>
             <div class="flex flex-col gap-1 text-sm">
               <p>
                 Learn about the Waterfall Methodology.
               </p>
-              <a href="https://builtin.com/software-engineering-perspectives/waterfall-methodology"
-                target="_blank" class="highlight-color highlight-color-hover hover:underline">
+              <a href="https://builtin.com/software-engineering-perspectives/waterfall-methodology" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline">
                 Visit Article
               </a>
             </div>
@@ -1058,16 +1059,16 @@ onMounted(() => {
 
         <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
           <div class="p-3 flex flex-col gap-2">
-            <a href="https://builtin.com/software-engineering-perspectives/json"
-              target="_blank" class="text-xl block font-extrabold hover:underline">
+            <a href="https://builtin.com/software-engineering-perspectives/json" target="_blank"
+              class="text-xl block font-extrabold hover:underline">
               What Is JSON?
             </a>
             <div class="flex flex-col gap-1 text-sm">
               <p>
                 Learn more about JSON.
               </p>
-              <a href="https://builtin.com/software-engineering-perspectives/json"
-                target="_blank" class="highlight-color highlight-color-hover hover:underline">
+              <a href="https://builtin.com/software-engineering-perspectives/json" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline">
                 Visit Article
               </a>
             </div>
@@ -1076,16 +1077,16 @@ onMounted(() => {
 
         <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
           <div class="p-3 flex flex-col gap-2">
-            <a href="https://builtin.com/data-science/pandas"
-              target="_blank" class="text-xl block font-extrabold hover:underline">
+            <a href="https://builtin.com/data-science/pandas" target="_blank"
+              class="text-xl block font-extrabold hover:underline">
               What Is Pandas?
             </a>
             <div class="flex flex-col gap-1 text-sm">
               <p>
                 Get started with Pandas.
               </p>
-              <a href="https://builtin.com/data-science/pandas"
-                target="_blank" class="highlight-color highlight-color-hover hover:underline">
+              <a href="https://builtin.com/data-science/pandas" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline">
                 Visit Article
               </a>
             </div>
@@ -1094,16 +1095,16 @@ onMounted(() => {
 
         <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
           <div class="p-3 flex flex-col gap-2">
-            <a href="https://builtin.com/software-engineering-perspectives/ruby-on-rails"
-              target="_blank" class="text-xl block font-extrabold hover:underline">
+            <a href="https://builtin.com/software-engineering-perspectives/ruby-on-rails" target="_blank"
+              class="text-xl block font-extrabold hover:underline">
               What Is Ruby on Rails?
             </a>
             <div class="flex flex-col gap-1 text-sm">
               <p>
                 Learn more about Ruby on Rails.
               </p>
-              <a href="https://builtin.com/software-engineering-perspectives/ruby-on-rails"
-                target="_blank" class="highlight-color highlight-color-hover hover:underline">
+              <a href="https://builtin.com/software-engineering-perspectives/ruby-on-rails" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline">
                 Visit Article
               </a>
             </div>
@@ -1112,16 +1113,16 @@ onMounted(() => {
 
         <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
           <div class="p-3 flex flex-col gap-2">
-            <a href="https://builtin.com/software-engineering-perspectives/ruby-on-rails"
-              target="_blank" class="text-xl block font-extrabold hover:underline">
+            <a href="https://builtin.com/software-engineering-perspectives/ruby-on-rails" target="_blank"
+              class="text-xl block font-extrabold hover:underline">
               What Is Ruby on Rails?
             </a>
             <div class="flex flex-col gap-1 text-sm">
               <p>
                 Learn more about Ruby on Rails.
               </p>
-              <a href="https://builtin.com/software-engineering-perspectives/ruby-on-rails"
-                target="_blank" class="highlight-color highlight-color-hover hover:underline">
+              <a href="https://builtin.com/software-engineering-perspectives/ruby-on-rails" target="_blank"
+                class="highlight-color highlight-color-hover hover:underline">
                 Visit Article
               </a>
             </div>
