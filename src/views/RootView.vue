@@ -261,27 +261,6 @@ onMounted(() => {
         </div>
 
         <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
-          <img src="/examples/pizza-boy-example.png" alt="Pizza boy demo example"
-            class="w-full border-b border-neutral-500" />
-
-          <div class="p-3 flex flex-col gap-2">
-            <a href="https://www.youtube.com/watch?v=bnutZ3ec74U" target="_blank"
-              class="text-xl block font-extrabold hover:underline">
-              Pizza boy demo
-            </a>
-            <div class="flex flex-col gap-1 text-sm">
-              <p>
-                A 3D mobile game designed for IOS and Android.
-              </p>
-              <a href="https://www.youtube.com/watch?v=bnutZ3ec74U" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline">
-                Visit Video
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
           <img src="/examples/vr-tennis-demo.png" alt="VR Tennis demo example"
             class="w-full border-b border-neutral-500" />
 
@@ -315,111 +294,6 @@ onMounted(() => {
                 A VR RTS prototype.
               </p>
               <a href="https://www.youtube.com/watch?v=Io5gkox-nzU" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline">
-                Visit Video
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
-          <img src="/examples/vr-pool-example.png" alt="VR RTS demoexample"
-            class="w-full border-b border-neutral-500" />
-
-          <div class="p-3 flex flex-col gap-2">
-            <a href="https://www.youtube.com/watch?v=7Q5KKqbr0PE" target="_blank"
-              class="text-xl block font-extrabold hover:underline">
-              VR Pool demo
-            </a>
-            <div class="flex flex-col gap-1 text-sm">
-              <p>
-                An interactive pool-table in a VR shooter prototype.
-              </p>
-              <a href="https://www.youtube.com/watch?v=7Q5KKqbr0PE" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline">
-                Visit Video
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
-          <img src="/examples/vending-machine-demo.png" alt="VR Vending Machines demo example"
-            class="w-full border-b border-neutral-500" />
-
-          <div class="p-3 flex flex-col gap-2">
-            <a href="https://www.youtube.com/watch?v=JLVNEcMAKFM" target="_blank"
-              class="text-xl block font-extrabold hover:underline">
-              VR Vending Machines demo
-            </a>
-            <div class="flex flex-col gap-1 text-sm">
-              <p>
-                Interactive vending machines in a VR shooter prototype.
-              </p>
-              <a href="https://www.youtube.com/watch?v=JLVNEcMAKFM" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline">
-                Visit Video
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
-          <img src="/examples/vr-zombie-shooter-prototype.png" alt="VR Zombie Game demo example"
-            class="w-full border-b border-neutral-500" />
-
-          <div class="p-3 flex flex-col gap-2">
-            <a href="https://www.youtube.com/watch?v=AUHNYBeSNi4" target="_blank"
-              class="text-xl block font-extrabold hover:underline">
-              VR Zombie Game demo
-            </a>
-            <div class="flex flex-col gap-1 text-sm">
-              <p>
-                A simple VR zombie shooter prototype.
-              </p>
-              <a href="https://www.youtube.com/watch?v=AUHNYBeSNi4" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline">
-                Visit Video
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
-          <img src="/examples/vr-vehicle-demo.png" alt="VR Vehicle Game demo example"
-            class="w-full border-b border-neutral-500" />
-
-          <div class="p-3 flex flex-col gap-2">
-            <a href="https://www.youtube.com/watch?v=mWmPMsBIqVI" target="_blank"
-              class="text-xl block font-extrabold hover:underline">
-              VR Vehicle Game demo
-            </a>
-            <div class="flex flex-col gap-1 text-sm">
-              <p>
-                A simple vehicle prototype in VR.
-              </p>
-              <a href="https://www.youtube.com/watch?v=mWmPMsBIqVI" target="_blank"
-                class="highlight-color highlight-color-hover hover:underline">
-                Visit Video
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-neutral-900 border border-neutral-500 rounded-md text-neutral-200 overflow-hidden">
-          <img src="/examples/vr-bow-example.png" alt="VR Bow demo example"
-            class="w-full border-b border-neutral-500" />
-
-          <div class="p-3 flex flex-col gap-2">
-            <a href="https://www.youtube.com/watch?v=1cWN1h5SHVo" target="_blank"
-              class="text-xl block font-extrabold hover:underline">
-              VR Bow demo
-            </a>
-            <div class="flex flex-col gap-1 text-sm">
-              <p>
-                A simple bow and arrow prototype in VR.
-              </p>
-              <a href="https://www.youtube.com/watch?v=1cWN1h5SHVo" target="_blank"
                 class="highlight-color highlight-color-hover hover:underline">
                 Visit Video
               </a>
