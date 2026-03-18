@@ -81,38 +81,13 @@ const vReveal = {
 
   <div class="relative z-2">
     <div class="w-full h-8 bg-neutral-950 border-b border-neutral-700 flex items-center px-4 gap-3" aria-hidden="true">
-      <span class="w-3 h-3 rounded-full bg-red-500 opacity-80"></span>
-      <span class="w-3 h-3 rounded-full bg-yellow-500 opacity-80"></span>
-      <span class="w-3 h-3 rounded-full bg-accent opacity-80"></span>
       <span class="ml-2 text-xs text-neutral-500 font-mono">~/bergandersen.com</span>
     </div>
 
     <div
       class="mx-auto p-3 md:p-0 md:py-6 md:w-128 lg:w-256 xl:w-324 flex flex-col lg:flex-row items-start justify-between gap-3 lg:gap-6">
 
-      <!-- Left column -->
       <div class="w-full lg:w-96 flex flex-col gap-3">
-        <div v-reveal class="card">
-          <div class="relative accent-bg p-3 h-16 mb-5" aria-hidden="true">
-            <img src="/personal-image.png" alt="Nicolai Berg Andersen profile photo"
-              class="rounded-full border-2 border-neutral-700 w-16 absolute -bottom-6 shadow-lg" />
-          </div>
-          <div class="p-3 pt-2">
-            <div class="flex items-center gap-2 mb-1">
-              <h1 class="text-md font-extrabold text-neutral-100">Nicolai Berg Andersen</h1>
-              <span class="status-dot" aria-hidden="true"></span>
-            </div>
-            <p class="text-xs font-mono text-neutral-400 mb-3" aria-label="Role: Full-stack developer">// Full-stack
-              developer</p>
-            <a href="https://www.linkedin.com/in/nicolai-berg-andersen-ab1279b3/" target="_blank"
-              rel="noopener noreferrer" class="opportunity-badge"
-              aria-label="Open to opportunities — contact me on LinkedIn">
-              <span class="opportunity-dot" aria-hidden="true"></span>
-              <span>Open to opportunities</span>
-              <span class="opportunity-platform">LinkedIn →</span>
-            </a>
-          </div>
-        </div>
 
         <div v-reveal class="card">
           <div class="accent-bg h-1 rounded-t-md" aria-hidden="true"></div>
@@ -127,28 +102,6 @@ const vReveal = {
           </div>
         </div>
 
-        <div v-reveal class="card">
-          <div class="accent-bg h-1 rounded-t-md" aria-hidden="true"></div>
-          <div class="p-3">
-            <h2 class="text-sm font-mono text-neutral-400 mb-3">// social_links</h2>
-            <div class="flex flex-col gap-2">
-              <a href="https://github.com/niiicolai" target="_blank" rel="noopener noreferrer"
-                class="flex items-center gap-2 text-sm link-accent transition-colors duration-200">
-                <span class="font-mono text-neutral-500" aria-hidden="true">$</span> github.com/niiicolai
-              </a>
-              <a href="https://builtin.com/authors/nicolai-andersen" target="_blank" rel="noopener noreferrer"
-                class="flex items-center gap-2 text-sm link-accent transition-colors duration-200">
-                <span class="font-mono text-neutral-500" aria-hidden="true">$</span> builtin.com/authors/nicolai...
-              </a>
-              <a href="https://www.linkedin.com/in/nicolai-berg-andersen-ab1279b3/" target="_blank"
-                rel="noopener noreferrer"
-                class="flex items-center gap-2 text-sm link-accent transition-colors duration-200">
-                <span class="font-mono text-neutral-500" aria-hidden="true">$</span> linkedin.com/in/nicolai...
-              </a>
-            </div>
-          </div>
-        </div>
-
         <div v-reveal class="card overflow-hidden">
           <CertificateCarousel :items="certificates" />
         </div>
@@ -156,15 +109,6 @@ const vReveal = {
 
       <!-- Center column -->
       <div class="w-full flex flex-col gap-3">
-        <div v-reveal class="card p-4">
-          <h2 class="text-sm font-mono text-neutral-400 mb-1">// introduction</h2>
-          <p class="text-sm text-neutral-300 mb-2">
-            Welcome to my corner of the web! I share development projects, AI-powered tools, and automation
-            experiments I'm passionate about. Not everything here is production-ready. You'll find both beginner and
-            advanced articles, lots of prototypes, and some more serious projects.
-            I enjoy building everything from full-scale 3D applications and websites to automation tools.
-          </p>
-        </div>
 
         <div v-reveal class="card overflow-hidden">
           <FeaturedCarousel :items="featuredCards" />
