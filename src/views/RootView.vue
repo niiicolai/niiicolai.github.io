@@ -4,6 +4,7 @@ import { useAnimatedBackground } from "../composables/useAnimatedBackground";
 import ArticleCarousel from "../components/ArticleCarousel.vue";
 import FeaturedCarousel from "../components/FeaturedCarousel.vue";
 import CertificateCarousel from "../components/CertificateCarousel.vue";
+import LearningActivities from "../components/LearningActivities.vue";
 import { centerCards, rightCards, carouselCards, featuredCards } from "../data/portfolioCards.js";
 
 const showBackToTop = ref(false);
@@ -36,6 +37,7 @@ const stack = [
   { name: 'Node.js', color: '#8cc84b' },
   { name: 'React', color: '#61dafb' },
   { name: 'Vue', color: '#42b883' },
+  { name: 'Vitest', color: '#61dafb' },
   { name: 'Three.js', color: '#a6e22e' },
   { name: 'MongoDB', color: '#47a248' },
   { name: 'MySQL', color: '#4479a1' },
@@ -89,6 +91,14 @@ const vReveal = {
 
       <div class="w-full lg:w-96 flex flex-col gap-3">
 
+        <div v-reveal class="card flex flex-col">
+          <div class="accent-bg h-1 rounded-t-md relative z-10" aria-hidden="true"></div>
+          <div class="p-3 flex flex-col items-center gap-3">
+            <img src="/personal-image.png" alt="Nicolai Berg Andersen" class="w-16 h-16 rounded-full object-cover border border-neutral-700" />
+            <p class="text-sm text-center text-neutral-400">Aspiring software developer based in Denmark.</p>
+          </div>
+        </div>
+
         <div v-reveal class="card">
           <div class="accent-bg h-1 rounded-t-md" aria-hidden="true"></div>
           <div class="p-3">
@@ -109,6 +119,10 @@ const vReveal = {
 
       <!-- Center column -->
       <div class="w-full flex flex-col gap-3">
+
+        <div v-reveal class="overflow-hidden">
+          <LearningActivities />
+        </div>
 
         <div v-reveal class="card overflow-hidden">
           <FeaturedCarousel :items="featuredCards" />

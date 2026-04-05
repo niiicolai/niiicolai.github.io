@@ -19,7 +19,7 @@ const next = () => {
 <template>
   <div class="carousel">
     <div class="carousel-header">
-      <span class="carousel-label font-mono">// articles</span>
+      <span class="text-sm font-mono text-neutral-400 font-mono">// articles</span>
       <div class="carousel-controls">
         <button @click="prev" aria-label="Previous">‹</button>
         <span class="carousel-counter">{{ current + 1 }} / {{ items.length }}</span>
@@ -70,7 +70,6 @@ const next = () => {
 }
 
 .carousel-label {
-  font-size: 0.75rem;
   color: #555;
 }
 
@@ -120,8 +119,8 @@ const next = () => {
 }
 
 .carousel-title {
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 0.875rem;
+  font-weight: 600;
   color: #e5e5e5;
   text-decoration: none;
   line-height: 1.4;
