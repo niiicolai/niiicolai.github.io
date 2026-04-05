@@ -21,7 +21,7 @@ onMounted(() => fetch());
     <ul v-else-if="activities.length" class="flex flex-col gap-2" role="list">
       <li v-for="activity in activities" :key="activity._id">
         <a
-          :href="`https://learn.bergandersen.com/#/path/${activity._id}`"
+          :href="`https://learn.bergandersen.com/path/${activity._id}`"
           target="_blank"
           rel="noopener noreferrer"
           class="flex flex-col gap-1 border border-neutral-800 rounded-md p-2 hover:border-neutral-600 transition-colors"
