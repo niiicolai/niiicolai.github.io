@@ -1,6 +1,15 @@
 
 export const featuredCards = [
   {
+    image: '/examples/card_example.webp',
+    imageAlt: '3D Draw and Guess example',
+    title: '3D Draw and Guess',
+    tag: '3D',
+    description: 'Play a 3D version of draw & guess: Use any 3D editor tool, upload it, let your friends guess what it is.',
+    link: 'https://draw.bergandersen.com/',
+    linkText: 'Visit Website',
+  },
+  {
     image: '/examples/review-agent-example.png',
     imageAlt: 'CoPR Agent example',
     title: 'CoPR Agent',
