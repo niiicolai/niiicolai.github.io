@@ -91,14 +91,6 @@ const vReveal = {
 
       <div class="w-full lg:w-96 flex flex-col gap-3">
 
-        <div v-reveal class="card flex flex-col">
-          <div class="accent-bg h-1 rounded-t-md relative z-10" aria-hidden="true"></div>
-          <div class="p-3 flex flex-col items-center gap-3">
-            <img src="/personal-image.png" alt="Nicolai Berg Andersen" class="w-16 h-16 rounded-full object-cover border border-neutral-700" />
-            <p class="text-sm text-center text-neutral-400">Software developer based in Denmark.</p>
-          </div>
-        </div>
-
         <div v-reveal class="card">
           <div class="accent-bg h-1 rounded-t-md" aria-hidden="true"></div>
           <div class="p-3">
