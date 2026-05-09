@@ -1,12 +1,12 @@
 
 export const featuredCards = [
   {
-    image: '/examples/card_example.webp',
-    imageAlt: '3D Draw and Guess example',
-    title: '3D Draw and Guess',
-    tag: '3D',
-    description: 'Play a 3D version of draw & guess: Use any 3D editor tool, upload it, let your friends guess what it is.',
-    link: 'https://draw.bergandersen.com/',
+    image: '/examples/learning-platform-example.png',
+    imageAlt: 'Learning Platform example',
+    title: 'Learning Platform',
+    tag: 'Web',
+    description: 'A bilingual (Danish/English) learning platform publishing technical tutorials that pair written explanations with interactive coding tasks to reinforce understanding.',
+    link: 'https://learn.bergandersen.com/',
     linkText: 'Visit Website',
   },
   {
@@ -17,6 +17,15 @@ export const featuredCards = [
     description: 'An AI-powered code review assistant for GitHub that automatically reviews pull requests and responds to comments using LLMs. Supports local models, multiple repositories, short-term memory, MCP tools, and a RAG pipeline.',
     link: 'https://www.bergandersen.com/copr-agent/',
     linkText: 'Visit Website',
+  },
+  {
+    image: '/examples/card_example.webp',
+    imageAlt: '3D Draw and Guess example',
+    title: '3D Draw and Guess',
+    tag: '3D',
+    description: 'Play a 3D version of draw & guess: Use any 3D editor tool, upload it, let your friends guess what it is.',
+    //link: 'https://draw.bergandersen.com/',
+    linkText: 'Website Disabled',
   },
   {
     image: '/examples/documentation-agent.png',
@@ -35,15 +44,6 @@ export const featuredCards = [
     description: 'A Model Context Protocol (MCP) server that exposes TwoEasyEngine\'s 2D canvas drawing capabilities as callable tools for LLM agents, enabling AI-driven canvas rendering workflows.',
     link: 'https://github.com/niiicolai/two-easy-engine-mcp-server',
     linkText: 'Visit Repository',
-  },
-  {
-    image: '/examples/learning-platform-example.png',
-    imageAlt: 'Learning Platform example',
-    title: 'Learning Platform',
-    tag: 'Web',
-    description: 'A bilingual (Danish/English) learning platform publishing technical tutorials that pair written explanations with interactive coding tasks to reinforce understanding.',
-    link: 'https://learn.bergandersen.com/',
-    linkText: 'Visit Website',
   },
   {
     image: '/examples/vr-webshop.png',
