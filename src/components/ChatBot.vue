@@ -311,7 +311,7 @@ onBeforeUnmount(() => {
       <p class="text-xs text-neutral-500">A tiny AI mascot that runs entirely in your browser, powered by <a
           href="https://github.com/huggingface/transformers.js" target="_blank" rel="noopener noreferrer"
           class="link-accent">transformers.js</a>. It's a small, quantized model (Qwen2.5-0.5B) running on
-        your CPU, so it's fast but not very smart — expect confident nonsense. Don't take anything it says
+        your CPU, so it's fast but not very smart, expect confident nonsense. Don't take anything it says
         seriously.</p>
     </div>
 
