@@ -63,7 +63,7 @@ const next = () => {
           {{ items[current].title }}
         </a>
         <p class="featured-desc">{{ items[current].description }}</p>
-        <a :href="items[current].link" target="_blank" rel="noopener noreferrer" class="link-accent featured-link">
+        <a v-if="items[current].linkText" :href="items[current].link" target="_blank" rel="noopener noreferrer" class="link-accent featured-link">
           {{ items[current].linkText }} →
         </a>
       </div>

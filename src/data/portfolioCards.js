@@ -7,7 +7,6 @@ export const featuredCards = [
     tag: 'Web',
     description: 'A bilingual (Danish/English) learning platform publishing technical tutorials that pair written explanations with interactive coding tasks to reinforce understanding.',
     link: 'https://learn.bergandersen.com/',
-    linkText: 'Visit Website',
   },
   {
     image: '/examples/review-agent-example.png',

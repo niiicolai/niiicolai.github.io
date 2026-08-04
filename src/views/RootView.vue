@@ -4,7 +4,7 @@ import { useAnimatedBackground } from "../composables/useAnimatedBackground";
 import ArticleCarousel from "../components/ArticleCarousel.vue";
 import FeaturedCarousel from "../components/FeaturedCarousel.vue";
 import CertificateCarousel from "../components/CertificateCarousel.vue";
-import LearningActivities from "../components/LearningActivities.vue";
+import ChatBot from "../components/ChatBot.vue";
 import { centerCards, rightCards, carouselCards, featuredCards } from "../data/portfolioCards.js";
 
 const showBackToTop = ref(false);
@@ -113,7 +113,7 @@ const vReveal = {
       <div class="w-full flex flex-col gap-3">
 
         <div v-reveal class="overflow-hidden">
-          <LearningActivities />
+          <ChatBot />
         </div>
 
         <div v-reveal class="card overflow-hidden">

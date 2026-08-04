@@ -6,4 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [tailwindcss(), vue()],
   base: '/',
+  optimizeDeps: {
+    exclude: ['@huggingface/transformers'],
+  },
 })
